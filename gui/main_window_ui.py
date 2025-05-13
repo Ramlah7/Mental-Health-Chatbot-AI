@@ -28,8 +28,6 @@ class Ui_MainWindow(object):
 "    font-family: \"Poppins\", \"Segoe UI\", sans-serif;\n"
 "    color: #2e2e2e;\n"
 "}\n"
-"\n"
-"/* 🧠 MindMate Header Label */\n"
 "QLabel#headerLabel {\n"
 "    font-size: 26px;\n"
 "    font-weight: bold;\n"
@@ -37,8 +35,6 @@ class Ui_MainWindow(object):
 "    qproperty-alignment: AlignCenter;\n"
 "    background-color: transparent;\n"
 "}\n"
-"\n"
-"/* 📚 History Label */\n"
 "QLabel#historyLabel {\n"
 "    font-size: 18px;\n"
 "    font-weight: 600;\n"
@@ -46,16 +42,12 @@ class Ui_MainWindow(object):
 "    padding: 8px;\n"
 "    background-color: transparent;\n"
 "}\n"
-"\n"
-"/* 🗂 Scroll & History widgets with neutral background */\n"
 "QScrollArea, QListWidget {\n"
 "    background-color: #ffffff;\n"
 "    border: none;\n"
 "    border-radius: 12px;\n"
 "    padding: 10px;\n"
 "}\n"
-"\n"
-"/* ✍️ Message input */\n"
 "QLineEdit {\n"
 "    background-color: #ffffff;\n"
 "    border: 1px solid #cfd8dc;\n"
@@ -63,8 +55,6 @@ class Ui_MainWindow(object):
 "    padding: 10px;\n"
 "    font-size: 14px;\n"
 "}\n"
-"\n"
-"/* 🚀 Send button */\n"
 "QPushButton#sendButton {\n"
 "    background-color: #4dd0e1;\n"
 "    color: #004d40;\n"
@@ -84,13 +74,6 @@ class Ui_MainWindow(object):
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
         self.splitter = QtWidgets.QSplitter(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(6)
-        sizePolicy.setHeightForWidth(self.splitter.sizePolicy().hasHeightForWidth())
-        self.splitter.setSizePolicy(sizePolicy)
-        self.splitter.setMinimumSize(QtCore.QSize(0, 0))
-        self.splitter.setMaximumSize(QtCore.QSize(16777215, 500))
         self.splitter.setOrientation(QtCore.Qt.Horizontal)
         self.splitter.setObjectName("splitter")
         self.widget = QtWidgets.QWidget(self.splitter)
@@ -114,22 +97,16 @@ class Ui_MainWindow(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget_2)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.headerlabel = QtWidgets.QLabel(self.widget_2)
+        self.headerLabel = QtWidgets.QLabel(self.widget_2)
         font = QtGui.QFont()
         font.setFamily("Poppins")
         font.setPointSize(24)
-        self.headerlabel.setFont(font)
-        self.headerlabel.setObjectName("headerlabel")
-        self.verticalLayout_2.addWidget(self.headerlabel)
+        self.headerLabel.setFont(font)
+        self.headerLabel.setObjectName("headerLabel")
+        self.verticalLayout_2.addWidget(self.headerLabel)
         self.scrollArea = QtWidgets.QScrollArea(self.widget_2)
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
-        self.scrollAreaWidgetContent = QtWidgets.QWidget()
-        self.scrollAreaWidgetContent.setGeometry(QtCore.QRect(0, 0, 506, 307))
-        self.scrollAreaWidgetContent.setMinimumSize(QtCore.QSize(506, 307))
-        self.scrollAreaWidgetContent.setMaximumSize(QtCore.QSize(506, 307))
-        self.scrollAreaWidgetContent.setObjectName("scrollAreaWidgetContent")
-        self.scrollArea.setWidget(self.scrollAreaWidgetContent)
         self.verticalLayout_2.addWidget(self.scrollArea)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -157,5 +134,5 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.historyLabel.setText(_translate("MainWindow", "History"))
-        self.headerlabel.setText(_translate("MainWindow", "MindMate"))
-        self.pushButton.setText(_translate("MainWindow", "PushButton"))
+        self.headerLabel.setText(_translate("MainWindow", "MindMate"))
+        self.pushButton.setText(_translate("MainWindow", "Send"))
