@@ -1,16 +1,9 @@
-import sys
-from PyQt5 import QtWidgets
-from gui.main_window_ui import Ui_MainWindow
+from database import database_handler
 
-class MinimalWindow(QtWidgets.QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
-        self.setWindowTitle("🚑 Minimal Crash Test")
+print("🔍 Attempting DB connection...")
+conn = database_handler.get_db_connection()
+print("✅ It worked!")
+schema=database_handler.init_schema()
+print("it too")
 
-if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
-    window = MinimalWindow()
-    window.show()
-    sys.exit(app.exec_())
+conn.close()
