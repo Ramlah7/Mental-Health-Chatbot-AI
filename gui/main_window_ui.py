@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(820, 552)
+        MainWindow.resize(820, 550)
         MainWindow.setStyleSheet("/* 🌈 Soft pastel background for full window */\n"
 "QMainWindow, QWidget {\n"
 "    background: qlineargradient(\n"
@@ -90,11 +90,11 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.splitter.sizePolicy().hasHeightForWidth())
         self.splitter.setSizePolicy(sizePolicy)
         self.splitter.setMinimumSize(QtCore.QSize(0, 0))
-        self.splitter.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.splitter.setMaximumSize(QtCore.QSize(16777215, 500))
         self.splitter.setOrientation(QtCore.Qt.Horizontal)
         self.splitter.setObjectName("splitter")
         self.widget = QtWidgets.QWidget(self.splitter)
-        self.widget.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.widget.setMaximumSize(QtCore.QSize(250, 500))
         self.widget.setObjectName("widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -124,10 +124,12 @@ class Ui_MainWindow(object):
         self.scrollArea = QtWidgets.QScrollArea(self.widget_2)
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
-        self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 506, 307))
-        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
-        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.scrollAreaWidgetContent = QtWidgets.QWidget()
+        self.scrollAreaWidgetContent.setGeometry(QtCore.QRect(0, 0, 506, 307))
+        self.scrollAreaWidgetContent.setMinimumSize(QtCore.QSize(506, 307))
+        self.scrollAreaWidgetContent.setMaximumSize(QtCore.QSize(506, 307))
+        self.scrollAreaWidgetContent.setObjectName("scrollAreaWidgetContent")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContent)
         self.verticalLayout_2.addWidget(self.scrollArea)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")

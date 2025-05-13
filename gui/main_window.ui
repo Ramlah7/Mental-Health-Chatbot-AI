@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>820</width>
-    <height>552</height>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -103,7 +103,7 @@ QPushButton#sendButton:hover {
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>16777215</height>
+        <height>500</height>
        </size>
       </property>
       <property name="orientation">
@@ -112,8 +112,8 @@ QPushButton#sendButton:hover {
       <widget class="QWidget" name="widget" native="true">
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
-         <height>16777215</height>
+         <width>250</width>
+         <height>500</height>
         </size>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -155,7 +155,7 @@ QPushButton#sendButton:hover {
           <property name="widgetResizable">
            <bool>true</bool>
           </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents">
+          <widget class="QWidget" name="scrollAreaWidgetContent">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -163,6 +163,18 @@ QPushButton#sendButton:hover {
              <width>506</width>
              <height>307</height>
             </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>506</width>
+             <height>307</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>506</width>
+             <height>307</height>
+            </size>
            </property>
           </widget>
          </widget>

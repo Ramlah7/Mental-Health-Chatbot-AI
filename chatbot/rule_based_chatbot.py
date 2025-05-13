@@ -1,8 +1,12 @@
-# rule_based_chatbot.py
+# chatbot/rule_based_chatbot.py
+
 from utils.sentiment_analysis import analyze_sentiment
 import random
+from database.database_handler import create_session, log_message
 
-# Define different types of replies
+# -------------------------------------------------------------------
+# Reply templates
+# -------------------------------------------------------------------
 positive_replies = [
     "That's wonderful to hear! Keep smiling!",
     "I'm happy for you! Keep spreading positivity!",
@@ -21,25 +25,50 @@ neutral_replies = [
     "I'm ready to listen whenever you are ready."
 ]
 
+# -------------------------------------------------------------------
+# Session initialization
+# -------------------------------------------------------------------
+def initialize_session():
+    """
+    Creates a new conversation session in the database.
+    Returns the session_id for subsequent logging.
+    """
+    return create_session()
 
-def generate_bot_reply(user_message):
-    """Generates a bot reply based on user's sentiment."""
+# -------------------------------------------------------------------
+# Main reply function
+# -------------------------------------------------------------------
+def get_reply(session_id: int, user_message: str) -> str:
+    """
+    Logs the user's message, generates a sentiment-based reply,
+    logs the bot's reply, and returns it.
+    """
+    # 1) Log user message
+    log_message(session_id, 'user', user_message)
+
+    # 2) Determine sentiment and choose a reply
     mood = analyze_sentiment(user_message)
-
     if mood == "Positive":
-        return random.choice(positive_replies)
+        reply = random.choice(positive_replies)
     elif mood == "Negative":
-        return random.choice(negative_replies)
+        reply = random.choice(negative_replies)
     else:
-        return random.choice(neutral_replies)
+        reply = random.choice(neutral_replies)
 
+    # 3) Log bot reply
+    log_message(session_id, 'bot', reply)
+    return reply
 
-# Example usage
+# -------------------------------------------------------------------
+# CLI entry-point for quick testing
+# -------------------------------------------------------------------
 if __name__ == "__main__":
+    sess = initialize_session()
+    print("MindMate (type 'exit' to quit)\n")
     while True:
-        user_input = input("You: ")
+        user_input = input("You: ").strip()
         if user_input.lower() in ["exit", "quit"]:
             print("Bot: Take care! Goodbye.")
             break
-        bot_reply = generate_bot_reply(user_input)
-        print(f"Bot: {bot_reply}")
+        bot_resp = get_reply(sess, user_input)
+        print(f"Bot: {bot_resp}")
