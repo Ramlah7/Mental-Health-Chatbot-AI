@@ -87,10 +87,10 @@ QLabel#chatbotIcon {
   <widget class="QLabel" name="chatbotanimation">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>230</x>
      <y>240</y>
-     <width>131</width>
-     <height>91</height>
+     <width>141</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -162,7 +162,7 @@ QLabel#chatbotIcon {
      <x>240</x>
      <y>320</y>
      <width>401</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -191,6 +191,21 @@ QLabel#chatbotIcon {
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="particleview">
+   <property name="geometry">
+    <rect>
+     <x>-25</x>
+     <y>-19</y>
+     <width>871</width>
+     <height>491</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>particleview</zorder>
+  <zorder>WelcomeLabel</zorder>
+  <zorder>chatbotanimation</zorder>
+  <zorder>namelabel</zorder>
+  <zorder>loadinganimation</zorder>
  </widget>
  <resources/>
  <connections/>

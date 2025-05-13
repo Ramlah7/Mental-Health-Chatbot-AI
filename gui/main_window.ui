@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 🌈 Soft pastel background for full window */
+QMainWindow, QWidget {
+    background: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #fce4ec,
+        stop:0.3 #e3f2fd,
+        stop:0.6 #fffde7,
+        stop:1 #e0f7fa
+    );
+    font-family: &quot;Poppins&quot;, &quot;Segoe UI&quot;, sans-serif;
+    color: #2e2e2e;
+}
+
+/* 🧠 MindMate Header Label */
+QLabel#headerLabel {
+    font-size: 26px;
+    font-weight: bold;
+    color: #263238;
+    qproperty-alignment: AlignCenter;
+    background-color: transparent;
+}
+
+/* 📚 History Label */
+QLabel#historyLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #37474f;
+    padding: 8px;
+    background-color: transparent;
+}
+
+/* 🗂 Scroll &amp; History widgets with neutral background */
+QScrollArea, QListWidget {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* ✍️ Message input */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* 🚀 Send button */
+QPushButton#sendButton {
+    background-color: #4dd0e1;
+    color: #004d40;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+QPushButton#sendButton:hover {
+    background-color: #26c6da;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>817</width>
+     <height>482</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>6</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="historyLabel">
+          <property name="font">
+           <font>
+            <family>Poppins</family>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>History</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="historyList"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="headerlabel">
+          <property name="font">
+           <font>
+            <family>Poppins</family>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>MindMate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>506</width>
+             <height>307</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>820</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
