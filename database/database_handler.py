@@ -23,14 +23,17 @@ def get_db_connection():
             sys.exit(1)
     return _global_db_connection
 
+
 def init_schema():
     print("🛠 [Schema] Creating tables if not exist...")
     db = get_db_connection()
     with db.cursor() as cur:
+        # ✅ Updated: sessions now includes title
         cur.execute("""
             CREATE TABLE IF NOT EXISTS sessions (
                 id INT AUTO_INCREMENT PRIMARY KEY,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                title VARCHAR(255) DEFAULT NULL
             );
         """)
         cur.execute("""
@@ -45,6 +48,7 @@ def init_schema():
         """)
     print("✅ [Schema] Ready.")
 
+
 def create_session():
     print("📝 [Session] Inserting new session...")
     db = get_db_connection()
@@ -55,6 +59,7 @@ def create_session():
     print(f"✅ [Session] ID = {session_id}")
     return session_id
 
+
 def log_message(session_id, sender, content):
     db = get_db_connection()
     with db.cursor() as cur:
@@ -64,21 +69,27 @@ def log_message(session_id, sender, content):
         )
     print(f"✅ [Log] {sender} message saved.")
 
+
 def fetch_sessions():
     db = get_db_connection()
     with db.cursor() as cur:
-        cur.execute("SELECT id, created_at FROM sessions ORDER BY created_at DESC")
+        cur.execute("SELECT id, title, created_at FROM sessions ORDER BY created_at DESC")
         sessions = cur.fetchall()
     print(f"✅ [Fetch] {len(sessions)} sessions found.")
     return sessions
 
+
 def fetch_messages(session_id):
     db = get_db_connection()
     with db.cursor() as cur:
-        cur.execute("SELECT sender, content FROM messages WHERE session_id = %s ORDER BY timestamp", (session_id,))
+        cur.execute(
+            "SELECT sender, content FROM messages WHERE session_id = %s ORDER BY timestamp",
+            (session_id,)
+        )
         messages = cur.fetchall()
     print(f"✅ [Fetch] {len(messages)} messages found.")
     return messages
+
 
 def update_session_title(session_id, title):
     db = get_db_connection()

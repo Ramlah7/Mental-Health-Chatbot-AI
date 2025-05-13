@@ -10,7 +10,7 @@ from database.database_handler import (
     log_message,
     fetch_sessions,
     fetch_messages,
-    update_session_title  # ✅ newly added
+    update_session_title
 )
 
 
@@ -67,12 +67,14 @@ class ChatWindow(QtWidgets.QMainWindow):
         try:
             log_message(self.current_session, 'user', text)
 
-            # ✅ Update session title if it's the first user message
-            if self.ui.historyList.count() > 0:
-                item = self.ui.historyList.item(0)
-                if item and item.text() == str(self.current_session):
+            # ✅ Update title if this session has no title yet
+            sessions = fetch_sessions()
+            for sess_id, title, _ in sessions:
+                if sess_id == self.current_session and (title is None or title.strip() == ""):
                     update_session_title(self.current_session, text[:50])
+                    print(f"✍️ [Title Set] Session {sess_id} → {text[:50]}")
                     self.refresh_history_list()
+                    break
 
         except Exception as e:
             self.show_error("Logging User Message Failed", str(e))
@@ -141,6 +143,7 @@ class ChatWindow(QtWidgets.QMainWindow):
 
         for sess_id, title, ts in db_sessions:
             label = title if title else ts.strftime("%Y-%m-%d %H:%M:%S")
+            print(f"📌 Session {sess_id} → Label: {label}")
             item = QtWidgets.QListWidgetItem(label)
             item.setData(QtCore.Qt.UserRole, sess_id)
             self.ui.historyList.addItem(item)
