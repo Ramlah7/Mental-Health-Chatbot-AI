@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtWidgets, QtCore
+from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import QMessageBox
 from gui.main_window_ui import Ui_MainWindow
 
@@ -20,7 +20,9 @@ class ChatWindow(QtWidgets.QMainWindow):
         print("🚀 Launching Application...")
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
         self.setWindowTitle("MindMate")
+        self.setWindowIcon(QtGui.QIcon("favicon.ico"))  # ✅ Set custom icon here
         self.setFixedSize(820, 500)
 
         QtCore.QTimer.singleShot(100, self.initialize_database_safely)
@@ -67,7 +69,6 @@ class ChatWindow(QtWidgets.QMainWindow):
         try:
             log_message(self.current_session, 'user', text)
 
-            # ✅ Update title if this session has no title yet
             sessions = fetch_sessions()
             for sess_id, title, _ in sessions:
                 if sess_id == self.current_session and (title is None or title.strip() == ""):
