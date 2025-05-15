@@ -1,20 +1,24 @@
-# === GUI & Database ===
+# === GUI ===
 PyQt5==5.15.9
+
+# === MySQL Connector with Secure Authentication ===
 PyMySQL==1.1.0
+cryptography>=3.3
 
-# === Core NLP Libraries ===
-transformers==4.40.0
-torch==2.1.2
-sentencepiece==0.1.99
+# === NLP and Sentiment Analysis ===
+transformers==4.51.3               # ✅ Compatible with sentence-transformers 2.6.1
+torch==2.1.2                       # ✅ Safe with manual SDPA disable
+sentencepiece==0.1.99             # ✅ Avoid CMake build errors
 emoji==2.11.0
-
-# === Sentiment & Language Utilities ===
+vaderSentiment==3.3.2
 nltk==3.8.1
-vaderSentiment==3.3.2  # optional legacy fallback
 
-# === Data Handling ===
-pandas==2.2.2
+# === Semantic Similarity ===
+sentence-transformers==2.6.1       # ✅ Stable release supporting latest features
+
+# === Dataset Handling ===
 datasets==2.19.1
+pandas==2.2.2
 
-# === Machine Learning ===
+# === Machine Learning Utilities ===
 scikit-learn==1.4.2
