@@ -1,0 +1,23 @@
+# GUI & Database
+PyQt5==5.15.9
+PyMySQL==1.1.0
+
+# Core NLP Libraries
+transformers==4.40.0
+torch>=2.1.0
+sentencepiece
+emoji==2.11.0
+
+# Optional: Tweet-specific model support
+tweeteval @ git+https://github.com/cardiffnlp/tweeteval.git
+
+# Sentiment & Language Utilities
+nltk==3.8.1
+vaderSentiment==3.3.2  # optional legacy fallback
+
+# Data handling
+pandas==2.2.2
+datasets==2.19.1
+
+# Misc
+scikit-learn==1.4.2
