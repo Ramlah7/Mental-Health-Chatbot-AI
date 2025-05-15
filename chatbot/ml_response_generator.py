@@ -18,7 +18,7 @@ except Exception as e:
     raise
 
 # === Load the Dataset ===
-data_path = os.path.join(os.path.dirname(__file__), "../data/mental_health_cleaned.csv")
+data_path = os.path.join(os.path.dirname(__file__), "../data/empathetic_dataset_cleaned.csv")
 try:
     print(f"📁 [Data] Loading dataset from: {data_path}")
     df = pd.read_csv(data_path)
@@ -36,7 +36,7 @@ try:
 
     # Remove unsafe replies
     unwanted_keywords = ['kill', 'sex', 'date', 'girlfriend', 'boyfriend', 'kiss',
-                         'love', 'fashion', 'party', 'drunk', 'relationship', 'marriage']
+                         'fashion', 'party', 'drunk', 'relationship', 'marriage']
     df = df[~df['bot_reply'].str.contains('|'.join(unwanted_keywords), case=False, na=False)]
 
     user_inputs = df['user_input'].tolist()
@@ -47,12 +47,18 @@ except Exception as e:
     traceback.print_exc()
     raise
 
-# === Encode Embeddings ===
+# === Encode Embeddings and Save/Load ===
+embeddings_file = os.path.join(os.path.dirname(__file__), "../data/empathetic_embeddings.pt")
 try:
-    print("🔍 [Embeddings] Starting encoding...")
-    start_time = time.time()
-    user_embeddings = model.encode(user_inputs, convert_to_tensor=True, dtype=torch.float32, show_progress_bar=True)
-    print(f"✅ [Embeddings] Encoded {len(user_embeddings)} inputs in {time.time() - start_time:.2f} seconds.")
+    if os.path.exists(embeddings_file):
+        print("📦 [Embeddings] Loading precomputed embeddings...")
+        user_embeddings = torch.load(embeddings_file)
+    else:
+        print("🔍 [Embeddings] Starting encoding...")
+        start_time = time.time()
+        user_embeddings = model.encode(user_inputs, convert_to_tensor=True, dtype=torch.float32, show_progress_bar=True)
+        torch.save(user_embeddings, embeddings_file)
+        print(f"✅ [Embeddings] Encoded {len(user_embeddings)} inputs in {time.time() - start_time:.2f} seconds and saved.")
 except Exception as e:
     print("❌ [Error] Failed during embedding computation.")
     traceback.print_exc()
