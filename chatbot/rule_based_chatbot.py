@@ -1,14 +1,26 @@
-# rule_based_chatbot.py
+# chatbot/rule_based_chatbot.py
 
 from utils.sentiment_analysis import analyze_sentiment
 from chatbot.ml_response_generator import find_best_match
 import traceback
 
+# === Unsafe content checker ===
+def is_safe_response(response):
+    bad_words = ['kill', 'sex', 'girlfriend', 'boyfriend', 'date', 'fashion', 'kiss']
+    return not any(bad_word in response.lower() for bad_word in bad_words)
+
+# === Hybrid Reply Generator ===
 def generate_bot_reply(user_message):
     try:
         sentiment = analyze_sentiment(user_message)
         print(f"🔎 Detected Sentiment: {sentiment}")
-        return find_best_match(user_message)
+
+        reply = find_best_match(user_message)
+
+        if not is_safe_response(reply):
+            return "I'm really sorry you're going through this. Would you like a breathing exercise or a self-care tip?"
+
+        return reply
     except Exception as e:
         print("❌ [Error] in generate_bot_reply:")
         traceback.print_exc()

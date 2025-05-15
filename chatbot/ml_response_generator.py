@@ -1,4 +1,4 @@
-# ml_response_generator.py
+# chatbot/ml_response_generator.py
 
 import os
 import torch
@@ -29,10 +29,16 @@ except Exception as e:
     traceback.print_exc()
     raise RuntimeError(f"Failed to load or process dataset: {e}")
 
-# === Clean the Data ===
+# === Clean the Data + Filter Inappropriate Replies ===
 try:
     df = df.dropna()
     df = df.query("user_input.str.len() > 0 and bot_reply.str.len() > 0", engine='python')
+
+    # Remove unsafe replies
+    unwanted_keywords = ['kill', 'sex', 'date', 'girlfriend', 'boyfriend', 'kiss',
+                         'love', 'fashion', 'party', 'drunk', 'relationship', 'marriage']
+    df = df[~df['bot_reply'].str.contains('|'.join(unwanted_keywords), case=False, na=False)]
+
     user_inputs = df['user_input'].tolist()
     bot_replies = df['bot_reply'].tolist()
     print(f"✅ [Data] Cleaned and ready with {len(user_inputs)} user inputs.")
