@@ -56,7 +56,7 @@ try:
     else:
         print("🔍 [Embeddings] Starting encoding...")
         start_time = time.time()
-        user_embeddings = model.encode(user_inputs, convert_to_tensor=True, dtype=torch.float32, show_progress_bar=True)
+        user_embeddings = model.encode(user_inputs, convert_to_tensor=True, show_progress_bar=True)
         torch.save(user_embeddings, embeddings_file)
         print(f"✅ [Embeddings] Encoded {len(user_embeddings)} inputs in {time.time() - start_time:.2f} seconds and saved.")
 except Exception as e:
@@ -71,7 +71,7 @@ def find_best_match(user_query):
         if not user_query.strip():
             return "I'm here to help whenever you're ready to talk."
 
-        query_embedding = model.encode(user_query, convert_to_tensor=True, dtype=torch.float32)
+        query_embedding = model.encode(user_query, convert_to_tensor=True)
         similarities = util.pytorch_cos_sim(query_embedding, user_embeddings)[0]
         best_idx = int(torch.argmax(similarities))
         return bot_replies[best_idx]

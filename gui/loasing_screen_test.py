@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets, QtCore, QtGui
 from gui.loasing_screen_testui import Ui_Form
-from main_window import ChatWindow  # your actual chatbot window
+from main_window import ChatWindow
 
 
 class LoadingScreen(QtWidgets.QWidget):
@@ -16,23 +16,25 @@ class LoadingScreen(QtWidgets.QWidget):
         self.start_animations()
         self.show()
 
-        # ⏳ After 5 seconds, open main window
-        QtCore.QTimer.singleShot(5000, self.open_main_window)
+        # Launch ChatWindow after 3 seconds
+        QtCore.QTimer.singleShot(3000, self.open_main_window)
 
     def center_window(self):
         screen = QtWidgets.QApplication.primaryScreen().availableGeometry()
-        self.move(
-            screen.center().x() - self.width() // 2,
-            screen.center().y() - self.height() // 2
-        )
+        x = (screen.width() - self.width()) // 2
+        y = (screen.height() - self.height()) // 2
+        self.move(x, y)
 
     def start_animations(self):
         try:
-            self.movie1 = QtGui.QMovie("C:/Users/ramla/Downloads/Animation - 1746873587109.gif")
+            gif1_path = "C:/Users/ramla/Downloads/Animation - 1746873587109.gif"
+            gif2_path = "C:/Users/ramla/Downloads/Animation - 1746882257108.gif"
+
+            self.movie1 = QtGui.QMovie(gif1_path)
             self.ui.botIcon.setMovie(self.movie1)
             self.movie1.start()
 
-            self.movie2 = QtGui.QMovie("C:/Users/ramla/Downloads/Animation - 1746882257108.gif")
+            self.movie2 = QtGui.QMovie(gif2_path)
             self.ui.animationLabel.setMovie(self.movie2)
             self.movie2.start()
         except Exception as e:
@@ -41,6 +43,12 @@ class LoadingScreen(QtWidgets.QWidget):
     def open_main_window(self):
         self.main_window = ChatWindow()
         self.main_window.show()
+
+        # 👇 These 3 lines ensure it appears on screen and is focused
+        self.main_window.raise_()                 # Bring to front
+        self.main_window.activateWindow()         # Request focus
+        self.main_window.setWindowState(QtCore.Qt.WindowActive)
+
         self.close()
 
 
