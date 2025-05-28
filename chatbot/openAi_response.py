@@ -1,11 +1,18 @@
-import openai
 import os
+import google.generativeai as genai
 from dotenv import load_dotenv
 from utils.sentiment_analysis import analyze_sentiment
 
 # Load environment variables
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Configure Gemini
+if not GEMINI_API_KEY:
+    raise ValueError("[Gemini API] API key not found in .env. Please set GEMINI_API_KEY.")
+
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("gemini-pro")
 
 # Prompt templates by sentiment
 PROMPT_MAP = {
@@ -14,8 +21,8 @@ PROMPT_MAP = {
     "Neutral":  "You are a balanced and helpful mental health assistant. Offer guidance and ask thoughtful questions."
 }
 
-def generate_openai_reply(user_input):
-    """Generate a sentiment-aware reply using OpenAI GPT."""
+def generate_gemini_reply(user_input):
+    """Generate a sentiment-aware reply using Google Gemini."""
     try:
         if not user_input.strip():
             return "I'm here when you're ready to talk."
@@ -26,28 +33,17 @@ def generate_openai_reply(user_input):
 
         # Step 2: Compose prompt
         system_instruction = PROMPT_MAP.get(sentiment, PROMPT_MAP["Neutral"])
-        messages = [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": user_input}
-        ]
+        prompt = f"{system_instruction}\nUser: {user_input}\nAssistant:"
 
-        # Step 3: Call OpenAI API (v1.x syntax)
-        response = openai.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages,
-            max_tokens=120,
-            temperature=0.7,
-            top_p=0.95,
-            frequency_penalty=0.5,
-            presence_penalty=0.6
-        )
+        # Step 3: Call Gemini API
+        response = model.generate_content(prompt)
 
         # Step 4: Return reply
-        reply = response.choices[0].message.content.strip()
+        reply = response.text.strip()
         return reply
 
     except Exception as e:
-        print(f"[OpenAI Error] {e}")
+        print(f"[Gemini Error] {e}")
         return "I'm here to support you, even if I couldn't find the right words just now."
 
 # Debugging CLI
@@ -57,4 +53,4 @@ if __name__ == "__main__":
         if text.lower() in ["exit", "quit"]:
             print("👋 Goodbye!")
             break
-        print("Bot:", generate_openai_reply(text))
+        print("Bot:", generate_gemini_reply(text))
