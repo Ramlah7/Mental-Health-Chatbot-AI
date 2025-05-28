@@ -12,7 +12,7 @@ if not GEMINI_API_KEY:
     raise ValueError("[Gemini API] API key not found in .env. Please set GEMINI_API_KEY.")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel(model_name="models/chat-bison-001")  # Updated model name
 
 # Prompt templates by sentiment
 PROMPT_MAP = {
