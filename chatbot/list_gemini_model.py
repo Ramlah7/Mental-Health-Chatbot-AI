@@ -12,4 +12,4 @@ models = genai.list_models()
 
 print("📋 Available Gemini Models:\n")
 for model in models:
-    print(f"- {model.name}  (Supports generate_content: {model.supports_generate_content})")
+    print(f"- {model.name}  (Supports generate_content: )")
