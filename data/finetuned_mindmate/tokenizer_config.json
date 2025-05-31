@@ -12,7 +12,6 @@
     }
   },
   "bos_token": "<|endoftext|>",
-  "chat_template": "{% for message in messages %}{{ message.content }}{{ eos_token }}{% endfor %}",
   "clean_up_tokenization_spaces": true,
   "eos_token": "<|endoftext|>",
   "errors": "replace",
