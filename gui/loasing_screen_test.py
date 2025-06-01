@@ -17,7 +17,7 @@ class LoadingScreen(QtWidgets.QWidget):
         self.show()
 
         # Launch ChatWindow after 3 seconds
-        QtCore.QTimer.singleShot(3000, self.open_main_window)
+        QtCore.QTimer.singleShot(5000, self.open_main_window)
 
     def center_window(self):
         screen = QtWidgets.QApplication.primaryScreen().availableGeometry()
@@ -27,8 +27,8 @@ class LoadingScreen(QtWidgets.QWidget):
 
     def start_animations(self):
         try:
-            gif1_path = "C:/Users/ramla/Downloads/Animation - 1746873587109.gif"
-            gif2_path = "C:/Users/ramla/Downloads/Animation - 1746882257108.gif"
+            gif1_path = "Animation - 1.gif"
+            gif2_path = "Animation - 2.gif"
 
             self.movie1 = QtGui.QMovie(gif1_path)
             self.ui.botIcon.setMovie(self.movie1)
