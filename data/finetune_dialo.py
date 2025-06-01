@@ -1,6 +1,5 @@
-# finetune_dialo.py
-
 import os
+import json
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -8,37 +7,46 @@ from transformers import (
     TrainingArguments,
     DataCollatorForLanguageModeling
 )
-from datasets import load_dataset
+from datasets import Dataset
 
 print("📦 [Step 1] Loading pretrained DialoGPT model...")
 try:
-    # === Load DialoGPT model + tokenizer
     model_name = "microsoft/DialoGPT-small"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    tokenizer.pad_token = tokenizer.eos_token  # ✅ ADD THIS LINE
+    tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(model_name)
     print("✅ DialoGPT-small loaded successfully.")
-
 except Exception as e:
     print("❌ Failed to load model/tokenizer.")
     raise e
 
-print("📁 [Step 2] Loading your fine-tuning dataset...")
+print("📁 [Step 2] Loading fine-tuning dataset from empathetic_finetune_dataset.jsonl...")
 try:
-    data_file = os.path.join(os.path.dirname(__file__), "dialo_finetune.json")
-    dataset = load_dataset("json", data_files={"train": data_file}, split="train")
-    print(f"✅ Loaded {len(dataset)} samples from: {data_file}")
+    dataset_path = "empathetic_finetune_dataset.jsonl"
+    with open(dataset_path, "r", encoding="utf-8") as f:
+        lines = [json.loads(line) for line in f]
+        for line in lines:
+            if "prompt" in line and "response" in line:
+                line["text"] = f"{line['prompt']}\n{line['response']}"
+            else:
+                raise KeyError("Missing 'prompt' or 'response' key in a data entry.")
+        dataset = Dataset.from_list(lines)
+    print(f"✅ Loaded {len(dataset)} samples from: {dataset_path}")
 except Exception as e:
     print("❌ Failed to load or parse your JSON dataset.")
     raise e
 
-print("🧪 [Step 3] Tokenizing samples...")
+print("🔪 [Step 3] Tokenizing samples...")
 try:
     def tokenize(batch):
-        input_ids = tokenizer(batch["prompt"], truncation=True, padding="max_length", max_length=64)
-        target_ids = tokenizer(batch["response"], truncation=True, padding="max_length", max_length=64)
-        input_ids["labels"] = target_ids["input_ids"]
-        return input_ids
+        encoded = tokenizer(
+            batch["text"],
+            truncation=True,
+            padding="max_length",
+            max_length=128
+        )
+        encoded["labels"] = encoded["input_ids"].copy()
+        return encoded
 
     tokenized_dataset = dataset.map(tokenize, batched=True)
     print("✅ Tokenization completed.")
@@ -52,9 +60,8 @@ training_args = TrainingArguments(
     output_dir=output_dir,
     per_device_train_batch_size=8,
     num_train_epochs=3,
-    logging_steps=20,
+    logging_steps=50,
     save_steps=200,
-    #evaluation_strategy="no",
     save_total_limit=2,
     weight_decay=0.01,
     warmup_steps=100,
@@ -78,7 +85,7 @@ except Exception as e:
     print("❌ Training failed.")
     raise e
 
-print(f"💾 [Step 6] Saving model and tokenizer to: {output_dir}")
+print(f"🗓️ [Step 6] Saving model and tokenizer to: {output_dir}")
 try:
     trainer.save_model(output_dir)
     tokenizer.save_pretrained(output_dir)
