@@ -8,7 +8,7 @@ RULES = {
     "coping_advice": r"\bhow (do|can) i\b|\bhelp me\b",
 }
 
-df = pd.read_csv("data/conversation_pairs.csv")
+df = pd.read_csv("../data/conversation_pairs.csv")
 labels = []
 for txt in df["user_input"]:
     lab = "other"
