@@ -1,0 +1,2503 @@
+text,label
+Hi there!,greeting
+"Hello, how are you today?",greeting
+Hey,greeting
+Good morning,greeting
+What's up?,greeting
+"Hi, are you there?",greeting
+Hello chatbot,greeting
+"Hey there, hope you're doing well",greeting
+Greetings,greeting
+Howdy,greeting
+Sup,greeting
+Good evening,greeting
+Hi friend,greeting
+Hey buddy,greeting
+Hello there friend,greeting
+Hiya,greeting
+Good afternoon,greeting
+Hey how's it going,greeting
+"Hi, nice to meet you",greeting
+"Hello, I'm new here",greeting
+"Hey, first time using this",greeting
+"Hi, can you help me?",greeting
+"Hello, I heard you could talk",greeting
+"Hey, someone recommended I try this",greeting
+"Hi, I'm looking for someone to chat with",greeting
+"Hello, are you real?",greeting
+"Hey, what's your name?",greeting
+"Hi, how does this work?",greeting
+"Hey there, thanks for being here",greeting
+"Hello, glad I found you",greeting
+"Hi, I hope you can understand me",greeting
+"Hey, ready to chat?",greeting
+Good day to you,greeting
+Hey there buddy,greeting
+Hello my friend,greeting
+How's the weather today?,small_talk
+What's your favorite color?,small_talk
+Do you like music?,small_talk
+What did you do today?,small_talk
+"I love pizza, do you?",small_talk
+It's raining outside,small_talk
+What's your favorite movie?,small_talk
+I had coffee this morning,small_talk
+Do you watch TV?,small_talk
+I'm bored right now,small_talk
+What's the time?,small_talk
+I like dogs better than cats,small_talk
+What's your hobby?,small_talk
+I went shopping today,small_talk
+Do you sleep?,small_talk
+I'm watching Netflix,small_talk
+What's your favorite food?,small_talk
+I love summer weather,small_talk
+Do you have friends?,small_talk
+I went for a walk today,small_talk
+What do you think about social media?,small_talk
+I'm trying to learn guitar,small_talk
+Do you like sports?,small_talk
+I had a weird dream last night,small_talk
+What's your favorite book?,small_talk
+I'm learning Spanish,small_talk
+Do you travel?,small_talk
+I love chocolate,small_talk
+What's your opinion on cats?,small_talk
+I bought new shoes today,small_talk
+Do you play games?,small_talk
+I'm listening to music right now,small_talk
+What's your favorite season?,small_talk
+I went to the gym today,small_talk
+Do you cook?,small_talk
+What is anxiety?,definition_request
+Can you explain depression?,definition_request
+What does PTSD mean?,definition_request
+Define panic attack,definition_request
+What is bipolar disorder?,definition_request
+Explain what stress is,definition_request
+What's the difference between anxiety and worry?,definition_request
+Can you tell me about OCD?,definition_request
+What is mindfulness?,definition_request
+Define mental health,definition_request
+What does therapy mean?,definition_request
+Explain what counseling is,definition_request
+What is cognitive behavioral therapy?,definition_request
+Can you define self-care?,definition_request
+What's a panic disorder?,definition_request
+Explain what trauma is,definition_request
+What is emotional regulation?,definition_request
+Define burnout,definition_request
+What's the meaning of resilience?,definition_request
+Can you explain eating disorders?,definition_request
+What is social anxiety?,definition_request
+Define what coping mechanisms are,definition_request
+What does it mean to have a breakdown?,definition_request
+Explain what grief is,definition_request
+What is addiction?,definition_request
+Can you define mood disorders?,definition_request
+What's the difference between sadness and depression?,definition_request
+Explain what intrusive thoughts are,definition_request
+What is emotional intelligence?,definition_request
+Define what triggers are,definition_request
+What does it mean to dissociate?,definition_request
+Can you explain what flashbacks are?,definition_request
+What is perfectionism?,definition_request
+Define what boundaries are,definition_request
+What's imposter syndrome?,definition_request
+How do I deal with stress?,coping_advice
+What can I do about my anxiety?,coping_advice
+Help me cope with depression,coping_advice
+I need advice for handling panic attacks,coping_advice
+How to manage overwhelming feelings?,coping_advice
+What are some ways to relax?,coping_advice
+I need help with my anger,coping_advice
+How can I sleep better?,coping_advice
+Ways to improve my mood?,coping_advice
+How do I stop overthinking?,coping_advice
+I need coping strategies for work stress,coping_advice
+How to deal with rejection?,coping_advice
+What can I do when I feel lonely?,coping_advice
+Help me manage my emotions,coping_advice
+How to cope with loss?,coping_advice
+I need advice for handling criticism,coping_advice
+Ways to build confidence?,coping_advice
+How do I set boundaries?,coping_advice
+Help me deal with change,coping_advice
+What can I do about intrusive thoughts?,coping_advice
+How to manage social anxiety?,coping_advice
+I need help with procrastination,coping_advice
+Ways to handle difficult relationships?,coping_advice
+How can I be more patient?,coping_advice
+Help me cope with uncertainty,coping_advice
+What to do when feeling overwhelmed?,coping_advice
+How do I practice self-compassion?,coping_advice
+Ways to deal with perfectionism?,coping_advice
+How can I improve my self-esteem?,coping_advice
+Help me handle conflict better,coping_advice
+What can I do about negative thoughts?,coping_advice
+How to cope with guilt?,coping_advice
+Ways to manage expectations?,coping_advice
+How do I deal with disappointment?,coping_advice
+Help me with time management stress,coping_advice
+I don't want to live anymore,self_harm
+Life isn't worth it,self_harm
+I want to end it all,self_harm
+I'm thinking about hurting myself,self_harm
+Nothing matters anymore,self_harm
+I wish I was dead,self_harm
+I can't take this pain,self_harm
+I want to disappear,self_harm
+Life is too hard,self_harm
+I'm better off gone,self_harm
+I have nothing to live for,self_harm
+I want it all to stop,self_harm
+I'm thinking about suicide,self_harm
+I can't do this anymore,self_harm
+I hate being alive,self_harm
+I want to give up,self_harm
+Everyone would be better without me,self_harm
+I'm tired of existing,self_harm
+I don't see the point in living,self_harm
+I want to hurt myself,self_harm
+I'm planning to end my life,self_harm
+I can't handle the pain anymore,self_harm
+I feel like dying,self_harm
+I want to cut myself,self_harm
+Life has no meaning,self_harm
+I'm done with everything,self_harm
+I wish I could just sleep forever,self_harm
+I'm thinking of ways to die,self_harm
+I want to kill myself,self_harm
+I'm ready to give up on life,self_harm
+I feel worthless and want to die,self_harm
+I'm going to harm myself tonight,self_harm
+I can't see a future for myself,self_harm
+I want to overdose,self_harm
+I'm going to jump,self_harm
+What's 2+2?,other
+Can you order pizza for me?,other
+What's the capital of France?,other
+How do I fix my car?,other
+What's the weather like?,other
+Can you help me with math homework?,other
+Tell me a joke,other
+What time is it in Tokyo?,other
+How do I cook pasta?,other
+Can you translate this to Spanish?,other
+What's the latest news?,other
+How do I lose weight?,other
+Can you recommend a restaurant?,other
+What's the meaning of life?,other
+How do I get to the airport?,other
+Can you help me write a resume?,other
+What's the best phone to buy?,other
+How do I learn programming?,other
+Can you solve this riddle?,other
+What's a good movie to watch?,other
+How do I start a business?,other
+Can you help me plan a vacation?,other
+What's the stock market doing?,other
+How do I bake a cake?,other
+Can you recommend a book?,other
+What's the fastest way to learn a language?,other
+How do I get rid of ants?,other
+Can you help me with my taxes?,other
+What's the best exercise routine?,other
+How do I grow tomatoes?,other
+Can you write me a poem?,other
+What's the history of Egypt?,other
+How do I change a tire?,other
+Can you help me find a job?,other
+What's the best way to invest money?,other
+Hello beautiful day,greeting
+"Hi, good to see you",greeting
+Hey what's happening,greeting
+Good morning sunshine,greeting
+Hello world,greeting
+Hi there how are things,greeting
+Hey good looking,greeting
+Greetings and salutations,greeting
+Hola amigo,greeting
+Hey stranger,greeting
+"Hi, long time no see",greeting
+Hello gorgeous,greeting
+What's good?,greeting
+Hey you,greeting
+Hi sweetie,greeting
+I just finished reading a book,small_talk
+My cat is being weird today,small_talk
+I love rainy days,small_talk
+Coffee or tea?,small_talk
+I'm thinking about getting a haircut,small_talk
+Do you believe in aliens?,small_talk
+I can't decide what to wear,small_talk
+My favorite number is 7,small_talk
+I'm craving ice cream,small_talk
+Do you ever get lonely?,small_talk
+I saw a really good sunset today,small_talk
+What do you think about tattoos?,small_talk
+I'm addicted to TikTok,small_talk
+My back hurts from sitting too much,small_talk
+I love the smell of fresh bread,small_talk
+Do you think robots will take over?,small_talk
+I can't whistle,small_talk
+My neighbor's dog barks all night,small_talk
+I'm trying to drink more water,small_talk
+What's your favorite emoji?,small_talk
+I hate doing laundry,small_talk
+Do you dream?,small_talk
+I found a dollar on the street,small_talk
+My phone battery dies too fast,small_talk
+I love bubble wrap,small_talk
+What is schizophrenia?,definition_request
+Can you explain what therapy involves?,definition_request
+What's the difference between anxiety and fear?,definition_request
+Define emotional abuse,definition_request
+What is meditation exactly?,definition_request
+Explain what borderline personality disorder is,definition_request
+What does it mean to have low self-esteem?,definition_request
+Can you tell me about ADHD?,definition_request
+What is seasonal depression?,definition_request
+Define what a mental health professional is,definition_request
+What's the meaning of psychological trauma?,definition_request
+Explain what self-harm is,definition_request
+What is body dysmorphia?,definition_request
+Can you define what anxiety disorders are?,definition_request
+What does it mean to be suicidal?,definition_request
+Explain what narcissistic personality disorder is,definition_request
+What is emotional numbness?,definition_request
+Define what gaslighting means,definition_request
+What's a therapeutic relationship?,definition_request
+Can you explain what codependency is?,definition_request
+What is chronic stress?,definition_request
+Define what psychotherapy is,definition_request
+What does it mean to have intrusive thoughts?,definition_request
+Explain what emotional validation is,definition_request
+What is agoraphobia?,definition_request
+How can I reduce my anxiety?,coping_advice
+What should I do when I'm having a panic attack?,coping_advice
+I need help dealing with my ex,coping_advice
+How do I cope with work pressure?,coping_advice
+What can I do about my insomnia?,coping_advice
+I need strategies for managing my temper,coping_advice
+How do I deal with toxic people?,coping_advice
+What helps with feeling overwhelmed at school?,coping_advice
+I need advice on handling family drama,coping_advice
+How can I stop being so hard on myself?,coping_advice
+What should I do when I feel like giving up?,coping_advice
+I need help with my eating habits and emotions,coping_advice
+How do I deal with constant worry?,coping_advice
+What can I do about feeling isolated?,coping_advice
+I need strategies for managing grief,coping_advice
+How do I cope with financial stress?,coping_advice
+What helps when you feel like you're not good enough?,coping_advice
+I need advice for dealing with bullies,coping_advice
+How can I manage my mood swings?,coping_advice
+What should I do when everything feels hopeless?,coping_advice
+I need help processing my trauma,coping_advice
+How do I deal with comparison and jealousy?,coping_advice
+What can I do about chronic pain affecting my mood?,coping_advice
+I need strategies for handling breakups,coping_advice
+How do I cope with aging parents?,coping_advice
+What helps with post-graduation depression?,coping_advice
+I need advice on managing caregiving stress,coping_advice
+How can I deal with seasonal mood changes?,coping_advice
+What should I do about workplace harassment?,coping_advice
+I need help with body image issues,coping_advice
+I'm so tired of fighting,self_harm
+I just want the pain to end,self_harm
+Maybe everyone would be happier without me,self_harm
+I'm thinking about taking all my pills,self_harm
+I can't see any way out of this,self_harm
+I want to stop breathing,self_harm
+I'm planning my funeral in my head,self_harm
+I feel like I'm drowning and can't surface,self_harm
+I want to cut deeper this time,self_harm
+I'm researching ways to die,self_harm
+I can't bear another day like this,self_harm
+I'm writing goodbye letters,self_harm
+I want to drive into oncoming traffic,self_harm
+I feel dead inside already,self_harm
+I'm going to hurt myself badly tonight,self_harm
+I wish I had never been born,self_harm
+I want to take a bunch of sleeping pills,self_harm
+I'm standing on a bridge thinking about jumping,self_harm
+I have a plan to end everything,self_harm
+I'm buying rope today,self_harm
+I want to bleed out slowly,self_harm
+I'm done pretending I'm okay,self_harm
+I have nothing left to give,self_harm
+I want to overdose on my medication,self_harm
+I can't stop thinking about hanging myself,self_harm
+I'm going to crash my car on purpose,self_harm
+I want to suffocate myself,self_harm
+I'm planning to die this weekend,self_harm
+I can't live with this pain anymore,self_harm
+I want to slice my wrists,self_harm
+How do I change my password?,other
+Can you recommend a good dentist?,other
+What's the best way to clean windows?,other
+How do I reset my router?,other
+Can you help me understand calculus?,other
+What's a good gift for my mom?,other
+How do I get rid of fruit flies?,other
+Can you explain quantum physics?,other
+What's the best way to save money?,other
+How do I unclog a drain?,other
+Can you help me write a cover letter?,other
+What's the difference between iOS and Android?,other
+How do I grow herbs indoors?,other
+Can you recommend a good podcast?,other
+What's the best way to learn guitar?,other
+How do I remove a stain from carpet?,other
+Can you help me plan a budget?,other
+What's the fastest way to get abs?,other
+How do I backup my photos?,other
+Can you explain cryptocurrency?,other
+What's a good first date idea?,other
+How do I get better at public speaking?,other
+Can you recommend a streaming service?,other
+What's the best way to organize my closet?,other
+How do I learn to code?,other
+Can you help me understand wine?,other
+What's the best exercise for back pain?,other
+How do I get my driver's license?,other
+Can you recommend a good laptop?,other
+What's the secret to good photography?,other
+Good to see you again,greeting
+Hey there partner,greeting
+Well hello there,greeting
+"Hi, hope you're well",greeting
+Bonjour,greeting
+Hey bud,greeting
+Good day mate,greeting
+Hello my dear friend,greeting
+"Hi, thanks for being here",greeting
+"Hey, glad you're online",greeting
+Salutations,greeting
+"Hi, ready to chat?",greeting
+"Hey there, how's your day?",greeting
+"Hello, nice weather today",greeting
+"Hi friend, what's up?",greeting
+I wonder what my dog is thinking,small_talk
+Do you ever feel confused?,small_talk
+I found a really cool rock today,small_talk
+My favorite color changes depending on my mood,small_talk
+I think penguins are underrated,small_talk
+Do you prefer sunrise or sunset?,small_talk
+I can't sleep when it's too quiet,small_talk
+My grandmother makes the best cookies,small_talk
+I wish I could fly,small_talk
+Do you think fish get thirsty?,small_talk
+I love the sound of rain on windows,small_talk
+My left shoe always gets untied first,small_talk
+"I talk to my plants, is that weird?",small_talk
+Do you ever wonder about parallel universes?,small_talk
+I collect bottle caps for no reason,small_talk
+My favorite word is serendipity,small_talk
+I always eat pizza with a fork,small_talk
+Do you think colors look the same to everyone?,small_talk
+I can't snap my fingers properly,small_talk
+"My car has a personality, I swear",small_talk
+I love watching clouds move,small_talk
+Do you prefer stairs or elevators?,small_talk
+I always check my phone when I'm bored,small_talk
+My ideal superpower would be teleportation,small_talk
+I think butterflies are just fancy moths,small_talk
+What does dissociation feel like?,definition_request
+Can you explain what a trigger warning is?,definition_request
+What's the difference between sadness and grief?,definition_request
+Define what emotional dysregulation means,definition_request
+What is complex PTSD?,definition_request
+Explain what attachment styles are,definition_request
+What does it mean to be emotionally available?,definition_request
+Can you tell me about impulse control?,definition_request
+What is toxic positivity?,definition_request
+Define what psychological safety means,definition_request
+What's the difference between guilt and shame?,definition_request
+Explain what rumination is,definition_request
+What is rejection sensitivity?,definition_request
+Can you define what executive function is?,definition_request
+What does it mean to be triggered?,definition_request
+Explain what emotional labor is,definition_request
+What is learned helplessness?,definition_request
+Define what self-sabotage means,definition_request
+What's the difference between empathy and sympathy?,definition_request
+Can you explain what healthy boundaries look like?,definition_request
+What is anticipatory grief?,definition_request
+Define what emotional contagion is,definition_request
+What does it mean to compartmentalize?,definition_request
+Explain what cognitive dissonance is,definition_request
+What is emotional maturity?,definition_request
+How do I stop procrastinating so much?,coping_advice
+What can I do when my mind races at night?,coping_advice
+I need help dealing with my inner critic,coping_advice
+How do I cope with feeling like an outsider?,coping_advice
+What should I do when I'm triggered by memories?,coping_advice
+I need strategies for managing holiday stress,coping_advice
+How can I deal with imposter syndrome?,coping_advice
+What helps when you feel emotionally numb?,coping_advice
+I need advice on handling rejection sensitivity,coping_advice
+How do I cope with chronic illness and depression?,coping_advice
+What can I do about feeling stuck in life?,coping_advice
+I need help managing my people-pleasing tendencies,coping_advice
+How do I deal with Sunday scaries?,coping_advice
+What should I do when I feel invisible?,coping_advice
+I need strategies for coping with change,coping_advice
+How can I manage my fear of abandonment?,coping_advice
+What helps when you feel like you don't belong?,coping_advice
+I need advice on dealing with toxic family members,coping_advice
+How do I cope with feeling behind in life?,coping_advice
+What can I do about my fear of failure?,coping_advice
+I need help with setting emotional boundaries,coping_advice
+How do I deal with feeling misunderstood?,coping_advice
+What should I do when I feel like I'm drowning?,coping_advice
+I need strategies for managing decision fatigue,coping_advice
+How can I cope with feeling emotionally exhausted?,coping_advice
+What helps when you feel like giving up on relationships?,coping_advice
+I need advice on handling comparison with others,coping_advice
+How do I deal with feeling like I'm not enough?,coping_advice
+What can I do about my fear of being judged?,coping_advice
+I need help coping with empty nest syndrome,coping_advice
+I'm going to end it tonight,self_harm
+I bought a gun to kill myself,self_harm
+I can't stop thinking about dying by suicide,self_harm
+I want to slit my throat,self_harm
+I'm going to take every pill in my medicine cabinet,self_harm
+I've been cutting myself and want to go deeper,self_harm
+I want to jump in front of a train,self_harm
+I'm writing my suicide note right now,self_harm
+I can't live another day feeling this empty,self_harm
+I want to burn myself alive,self_harm
+I'm going to drive my car off a cliff,self_harm
+I have the rope ready to hang myself,self_harm
+I want to drown myself in the bathtub,self_harm
+I'm planning to overdose this weekend,self_harm
+I can't take the emotional pain anymore,self_harm
+I want to stab myself in the chest,self_harm
+I'm going to jump from the highest building,self_harm
+I have nothing to live for anymore,self_harm
+I want to poison myself with bleach,self_harm
+I'm ready to die by my own hand,self_harm
+I can't see any reason to keep breathing,self_harm
+I want to shoot myself in the head,self_harm
+I'm going to step in front of a bus,self_harm
+I have my suicide planned for tomorrow,self_harm
+I want to electrocute myself,self_harm
+I'm going to suffocate myself with a plastic bag,self_harm
+I can't handle being alive for one more second,self_harm
+I want to set myself on fire,self_harm
+I'm going to overdose on my antidepressants,self_harm
+I just want everything to stop forever,self_harm
+Can you help me fix my printer?,other
+What's the best way to learn Spanish?,other
+How do I get better at chess?,other
+Can you recommend a good horror movie?,other
+What's the fastest way to lose 10 pounds?,other
+How do I start a garden?,other
+Can you help me understand the stock market?,other
+What's a good recipe for banana bread?,other
+How do I get better WiFi signal?,other
+Can you recommend a good video game?,other
+What's the best way to clean leather shoes?,other
+How do I learn to play piano?,other
+Can you help me write a birthday card?,other
+What's the difference between LED and LCD?,other
+How do I get rid of mice in my house?,other
+Can you recommend a good workout app?,other
+What's the best way to fold fitted sheets?,other
+How do I improve my credit score?,other
+Can you help me plan a dinner party?,other
+What's a good first car to buy?,other
+How do I get better at parallel parking?,other
+Can you recommend a good skincare routine?,other
+What's the best way to study for exams?,other
+How do I grow my social media following?,other
+Can you help me understand insurance?,other
+What's a good way to meet new people?,other
+How do I get better at negotiations?,other
+Can you recommend a good morning routine?,other
+What's the best way to organize my desk?,other
+How do I learn to meditate properly?,other
+Hey gorgeous,greeting
+What's crackin'?,greeting
+Howdy partner,greeting
+Top of the morning to you,greeting
+Hey sunshine,greeting
+"Well well well, hello there",greeting
+Good to see your face,greeting
+Hey champ,greeting
+Greetings earthling,greeting
+Hey rockstar,greeting
+Hello beautiful soul,greeting
+What's the word?,greeting
+Hey legend,greeting
+Good day sunshine,greeting
+Hey superstar,greeting
+I just ate the best sandwich ever,small_talk
+Do you ever wonder why we yawn?,small_talk
+My socks never match anymore,small_talk
+I think I'm allergic to Mondays,small_talk
+Do you prefer hot or cold showers?,small_talk
+I found an old photo of myself today,small_talk
+My favorite pen just ran out of ink,small_talk
+I wonder what my life would be like if I was taller,small_talk
+Do you think aliens have pets?,small_talk
+I can't remember the last time I used a payphone,small_talk
+My phone screen is cracked but I'm too lazy to fix it,small_talk
+I always forget to water my plants,small_talk
+Do you think robots get tired?,small_talk
+I love the smell of old books,small_talk
+My car makes a weird noise but still runs,small_talk
+I wonder if animals have favorite foods,small_talk
+I always lose one sock in the laundry,small_talk
+Do you think fish recognize their owners?,small_talk
+I can't fold a fitted sheet to save my life,small_talk
+My favorite mug has a chip in it but I still use it,small_talk
+I wonder what my cat dreams about,small_talk
+Do you prefer digital or physical books?,small_talk
+I always check behind the shower curtain,small_talk
+My favorite season keeps changing,small_talk
+I think my house plant is judging me,small_talk
+What is emotional blackmail?,definition_request
+Can you explain what defense mechanisms are?,definition_request
+What's the difference between therapy and counseling?,definition_request
+Define what projection means in psychology,definition_request
+What is abandonment anxiety?,definition_request
+Explain what cognitive restructuring is,definition_request
+What does it mean to have poor emotional regulation?,definition_request
+Can you tell me about attachment trauma?,definition_request
+What is psychological abuse?,definition_request
+Define what emotional flashbacks are,definition_request
+What's the difference between bipolar 1 and 2?,definition_request
+Explain what hypervigilance means,definition_request
+What is catastrophic thinking?,definition_request
+Can you define what emotional unavailability is?,definition_request
+What does it mean to be codependent?,definition_request
+Explain what toxic shame is,definition_request
+What is emotional neglect?,definition_request
+Define what people pleasing really means,definition_request
+What's the difference between sympathy and empathy?,definition_request
+Can you explain what inner child work is?,definition_request
+What is psychological manipulation?,definition_request
+Define what emotional boundaries are,definition_request
+What does it mean to be highly sensitive?,definition_request
+Explain what gaslighting looks like,definition_request
+What is relationship anxiety?,definition_request
+How can I stop being such a perfectionist?,coping_advice
+What should I do when my anxiety keeps me awake?,coping_advice
+I need help dealing with my mother's criticism,coping_advice
+How do I cope with feeling different from everyone?,coping_advice
+What can I do when I feel like I'm falling apart?,coping_advice
+I need strategies for managing my anger at work,coping_advice
+How do I deal with feeling like I don't matter?,coping_advice
+What helps when you can't stop crying?,coping_advice
+I need advice on handling my fear of commitment,coping_advice
+How can I manage my social battery better?,coping_advice
+What should I do when I feel paralyzed by choices?,coping_advice
+I need help coping with my friend's betrayal,coping_advice
+How do I deal with feeling like I'm behind everyone else?,coping_advice
+What can I do about my fear of being alone?,coping_advice
+I need strategies for managing my overthinking,coping_advice
+How do I cope with feeling disconnected from myself?,coping_advice
+What helps when you feel like you're suffocating?,coping_advice
+I need advice on dealing with my controlling parents,coping_advice
+How can I manage my fear of disappointing others?,coping_advice
+What should I do when I feel emotionally drained?,coping_advice
+I need help with my tendency to self-isolate,coping_advice
+How do I deal with feeling like I'm not living up to potential?,coping_advice
+What can I do about my constant need for validation?,coping_advice
+I need strategies for coping with my sensitivity,coping_advice
+How do I handle feeling overwhelmed by other people's emotions?,coping_advice
+What helps when you feel like you're losing yourself?,coping_advice
+I need advice on managing my fear of rejection,coping_advice
+How can I cope with feeling like I'm always the problem?,coping_advice
+What should I do when I feel like I can't trust anyone?,coping_advice
+I need help dealing with my tendency to catastrophize,coping_advice
+I'm going to kill myself with my dad's gun,self_harm
+I want to die in my sleep and never wake up,self_harm
+I'm thinking about carbon monoxide poisoning,self_harm
+I want to cut my wrists until I bleed out,self_harm
+I'm going to overdose on everything in the medicine cabinet,self_harm
+I can't live with this shame anymore,self_harm
+I want to throw myself off a bridge,self_harm
+any tips to manage anxiety :),coping_advice
+i'm tired of living,self_harm
+there's no point in living!,self_harm
+how can i calm down when i'm upset? :),coping_advice
+what does OCD stand for??,definition_request
+i want to die,self_harm
+how to handle panic attacks :(,coping_advice
+tips for staying motivated :P,coping_advice
+gfhdjk??...,other
+good evening?...,greeting
+i'm tired of living?,self_harm
+hi?? :),greeting
+how to improve self confidence!...,coping_advice
+oops? :),other
+oops? :(,other
+gfhdjk!...,other
+long time no talk :),small_talk
+oops!! :(,other
+i want to die!,self_harm
+how was your day??,small_talk
+advice for coping with depression....,coping_advice
+how was your day?? :(,small_talk
+what is bipolar disorder??,definition_request
+how do i deal with stress :),coping_advice
+hope you're doing well!! :(,small_talk
+what's new? :P,small_talk
+hey there. :P,greeting
+????? :),other
+blah blah. :P,other
+maybe later?...,other
+what is anxiety?? :P,definition_request
+hi. :),greeting
+tips for staying motivated! :(,coping_advice
+what is anxiety :(,definition_request
+define stress for me?? :(,definition_request
+just chilling! :P,small_talk
+i can't go on anymore.,self_harm
+help me deal with insomnia??,coping_advice
+random text :),other
+hey there.,greeting
+what's up....,small_talk
+hello.,greeting
+how's it going! :(,small_talk
+??? :),other
+how's it going,small_talk
+how was your day? :),small_talk
+gfhdjk! :),other
+ways to relax after a tough day?,coping_advice
+what does OCD stand for? :),definition_request
+i dunno....,other
+tips for staying motivated...,coping_advice
+idk what to say?? :),other
+how are you doing today?? :),small_talk
+what should i do when i feel overwhelmed. :),coping_advice
+good afternoon?? :),greeting
+good evening!...,greeting
+how do i deal with stress :P,coping_advice
+hiya!.,greeting
+how's it going?,small_talk
+i'm so worthless i want to die,self_harm
+what's new!! :(,small_talk
+good morning,greeting
+ways to relax after a tough day! :P,coping_advice
+how are you doing today. :P,small_talk
+how do i deal with stress...,coping_advice
+i should just kill myself!,self_harm
+gfhdjk??,other
+hey there :P,greeting
+tips for staying motivated. :P,coping_advice
+hiya!!! :P,greeting
+define self esteem??,definition_request
+ways to relax after a tough day? :P,coping_advice
+i can't go on anymore?,self_harm
+how's it going?? :(,small_talk
+any plans for today!!...,small_talk
+tips for staying motivated??...,coping_advice
+good afternoon....,greeting
+any tips to manage anxiety. :P,coping_advice
+how's it going.,small_talk
+i wish i wasn't here?,self_harm
+hiya!! :(,greeting
+just chilling? :),small_talk
+good morning :(,greeting
+how's it going?? :P,small_talk
+tips for staying motivated!! :(,coping_advice
+i want to hurt myself!!,self_harm
+i want to end it all,self_harm
+what's up? :P,small_talk
+define self esteem :P,definition_request
+what do you mean by mindfulness! :(,definition_request
+how's it going. :),small_talk
+i feel like a burden and want to die?,self_harm
+define stress for me??,definition_request
+i'm so worthless i want to die!,self_harm
+hi?...,greeting
+hey there! :(,greeting
+i should just kill myself!!,self_harm
+i want to die?,self_harm
+what is anxiety??...,definition_request
+123456? :P,other
+hope you're doing well!,small_talk
+help me deal with insomnia...,coping_advice
+advice for coping with depression! :(,coping_advice
+i dunno!! :),other
+123456....,other
+how do i deal with stress....,coping_advice
+i want to end it all!!,self_harm
+gfhdjk!! :P,other
+there's no point in living!!,self_harm
+hi!!,greeting
+what is bipolar disorder?? :P,definition_request
+what's new?? :),small_talk
+i dunno :(,other
+what should i do when i feel overwhelmed....,coping_advice
+just chilling?,small_talk
+gfhdjk? :(,other
+define self esteem?? :(,definition_request
+i feel like a burden and want to die,self_harm
+nice weather we're having?,small_talk
+how's it going!! :P,small_talk
+how do i deal with stress. :),coping_advice
+what should i do when i feel overwhelmed!! :P,coping_advice
+what is therapy!!,definition_request
+maybe later?? :P,other
+how to improve self confidence,coping_advice
+just chilling? :(,small_talk
+idk what to say. :P,other
+how to handle panic attacks....,coping_advice
+hi :(,greeting
+good evening!! :P,greeting
+nice weather we're having!...,small_talk
+good afternoon?? :(,greeting
+good afternoon!!...,greeting
+any plans for today! :P,small_talk
+any plans for today?...,small_talk
+maybe later?? :(,other
+gfhdjk!!...,other
+any plans for today :P,small_talk
+how's it going? :P,small_talk
+advice for coping with depression.,coping_advice
+good evening? :),greeting
+idk what to say?? :P,other
+what exactly is burnout. :P,definition_request
+blah blah. :(,other
+what is anxiety.,definition_request
+any plans for today!! :(,small_talk
+hiya,greeting
+random text!...,other
+what should i do when i feel overwhelmed :),coping_advice
+tips for staying motivated!!,coping_advice
+what should i do when i feel overwhelmed?,coping_advice
+blah blah!! :P,other
+there's no point in living,self_harm
+how's it going? :(,small_talk
+how are you doing today! :),small_talk
+any plans for today!...,small_talk
+define self esteem!! :P,definition_request
+what is bipolar disorder :(,definition_request
+good afternoon. :),greeting
+gfhdjk.,other
+what do you mean by mindfulness...,definition_request
+what does OCD stand for!!...,definition_request
+how are you doing today!!...,small_talk
+how was your day :(,small_talk
+i feel like a burden and want to die.,self_harm
+explain PTSD. :(,definition_request
+i'm tired of living??,self_harm
+what exactly is burnout.,definition_request
+how can i calm down when i'm upset. :(,coping_advice
+????? :P,other
+explain PTSD?? :P,definition_request
+what do you mean by mindfulness....,definition_request
+oops :P,other
+i dunno! :(,other
+i should just kill myself??,self_harm
+how to improve self confidence!!...,coping_advice
+what's up!!,small_talk
+hope you're doing well!...,small_talk
+define self esteem! :),definition_request
+what's new! :P,small_talk
+any plans for today?? :),small_talk
+how can i calm down when i'm upset!,coping_advice
+yo?? :),greeting
+good afternoon :P,greeting
+advice for coping with depression!!...,coping_advice
+i wish i wasn't here!,self_harm
+what should i do when i feel overwhelmed...,coping_advice
+blah blah.,other
+hi :P,greeting
+idk what to say!! :),other
+explain PTSD?...,definition_request
+i can't go on anymore,self_harm
+good afternoon! :(,greeting
+???.,other
+i feel like a burden and want to die!!,self_harm
+how to improve self confidence? :(,coping_advice
+just chilling?? :),small_talk
+how do i deal with stress!! :P,coping_advice
+any plans for today! :(,small_talk
+blah blah. :),other
+there's no point in living?,self_harm
+long time no talk :P,small_talk
+123456,other
+idk what to say!!,other
+hiya!? :),greeting
+tips for staying motivated! :),coping_advice
+define stress for me,definition_request
+how can i calm down when i'm upset?,coping_advice
+can you tell me what depression means!!...,definition_request
+define stress for me? :P,definition_request
+any tips to manage anxiety!!,coping_advice
+yo :(,greeting
+hope you're doing well!!,small_talk
+???!!...,other
+nice weather we're having?? :(,small_talk
+nice weather we're having!!...,small_talk
+good evening? :P,greeting
+how's it going! :P,small_talk
+what should i do when i feel overwhelmed. :P,coping_advice
+i want to die.,self_harm
+long time no talk?? :P,small_talk
+hi. :P,greeting
+hey there,greeting
+good evening. :),greeting
+what's up. :(,small_talk
+hey there?? :(,greeting
+i dunno :),other
+i want to die!!,self_harm
+???!! :),other
+what is bipolar disorder??...,definition_request
+hope you're doing well?? :P,small_talk
+what should i do when i feel overwhelmed? :(,coping_advice
+blah blah?...,other
+oops :(,other
+good evening? :(,greeting
+i want to end it all?,self_harm
+explain PTSD,definition_request
+long time no talk? :),small_talk
+what do you mean by mindfulness!! :(,definition_request
+???. :(,other
+i'm so worthless i want to die?,self_harm
+what do you mean by mindfulness?? :(,definition_request
+how to handle panic attacks!!,coping_advice
+define self esteem!!,definition_request
+explain PTSD! :),definition_request
+yo :P,greeting
+idk what to say. :),other
+how's it going? :),small_talk
+how do i deal with stress!!...,coping_advice
+hey!!,greeting
+how was your day. :),small_talk
+ways to relax after a tough day! :),coping_advice
+good afternoon. :(,greeting
+i want to end it all!,self_harm
+how to handle panic attacks!! :P,coping_advice
+how are you doing today.,small_talk
+long time no talk? :P,small_talk
+i wish i wasn't here,self_harm
+what is therapy!,definition_request
+how was your day! :P,small_talk
+i dunno!...,other
+random text?,other
+how to handle panic attacks. :(,coping_advice
+what is bipolar disorder?...,definition_request
+define stress for me?? :P,definition_request
+oops!! :P,other
+can you tell me what depression means :(,definition_request
+hiya!,greeting
+hello! :(,greeting
+any tips to manage anxiety? :P,coping_advice
+what exactly is burnout! :),definition_request
+explain PTSD. :),definition_request
+i'm tired of living!!,self_harm
+maybe later....,other
+define self esteem,definition_request
+how do i deal with stress?,coping_advice
+random text? :),other
+how can i calm down when i'm upset,coping_advice
+help me deal with insomnia??...,coping_advice
+i want to hurt myself?,self_harm
+what exactly is burnout?,definition_request
+define stress for me. :P,definition_request
+any plans for today!! :),small_talk
+can you tell me what depression means!! :(,definition_request
+i should just kill myself?,self_harm
+hope you're doing well. :(,small_talk
+hey! :P,greeting
+good afternoon :(,greeting
+long time no talk. :),small_talk
+tips for staying motivated?? :),coping_advice
+i want to hurt myself!,self_harm
+any tips to manage anxiety?...,coping_advice
+what do you mean by mindfulness??,definition_request
+define self esteem!...,definition_request
+yo!!...,greeting
+how was your day!! :(,small_talk
+i'm so worthless i want to die.,self_harm
+help me deal with insomnia? :),coping_advice
+hiya!...,greeting
+how was your day?...,small_talk
+what should i do when i feel overwhelmed!!,coping_advice
+how do i deal with stress?...,coping_advice
+what does OCD stand for! :(,definition_request
+what is therapy. :),definition_request
+nice weather we're having. :(,small_talk
+good morning. :),greeting
+what exactly is burnout?? :(,definition_request
+how to handle panic attacks? :(,coping_advice
+yo?,greeting
+i dunno...,other
+long time no talk?? :(,small_talk
+this doesn't make sense!! :(,other
+hello?? :P,greeting
+hope you're doing well?...,small_talk
+what do you mean by mindfulness??...,definition_request
+what's new...,small_talk
+what exactly is burnout :P,definition_request
+tips for staying motivated!...,coping_advice
+hiya!?? :),greeting
+what is therapy?? :(,definition_request
+yo! :(,greeting
+hey. :(,greeting
+i can't go on anymore??,self_harm
+nice weather we're having :),small_talk
+what do you mean by mindfulness? :P,definition_request
+random text :P,other
+hello! :),greeting
+what's up!,small_talk
+hiya!??...,greeting
+what exactly is burnout!!,definition_request
+good morning. :P,greeting
+gfhdjk? :),other
+any plans for today? :),small_talk
+what's up. :),small_talk
+hope you're doing well? :P,small_talk
+gfhdjk! :(,other
+explain PTSD?,definition_request
+hey there? :P,greeting
+random text!! :P,other
+hey there?,greeting
+i want to die??,self_harm
+how to improve self confidence! :(,coping_advice
+what do you mean by mindfulness.,definition_request
+what does OCD stand for. :P,definition_request
+random text. :(,other
+hello!,greeting
+advice for coping with depression :),coping_advice
+how to handle panic attacks? :),coping_advice
+123456!...,other
+explain PTSD :P,definition_request
+good morning :),greeting
+what should i do when i feel overwhelmed?? :P,coping_advice
+advice for coping with depression? :),coping_advice
+oops :),other
+what's new!! :P,small_talk
+i want to end it all??,self_harm
+i want to hurt myself,self_harm
+how to improve self confidence!,coping_advice
+define self esteem?...,definition_request
+hey!! :P,greeting
+what does OCD stand for??...,definition_request
+explain PTSD??...,definition_request
+what do you mean by mindfulness :(,definition_request
+good afternoon? :P,greeting
+hey. :),greeting
+how do i deal with stress?? :P,coping_advice
+how was your day!,small_talk
+what does OCD stand for?? :(,definition_request
+can you tell me what depression means....,definition_request
+just chilling!...,small_talk
+define self esteem?? :P,definition_request
+gfhdjk. :),other
+advice for coping with depression!...,coping_advice
+how are you doing today!! :P,small_talk
+how to improve self confidence :P,coping_advice
+what should i do when i feel overwhelmed? :P,coping_advice
+tips for staying motivated??,coping_advice
+advice for coping with depression!! :P,coping_advice
+how to handle panic attacks! :(,coping_advice
+hope you're doing well?? :),small_talk
+advice for coping with depression...,coping_advice
+i wish i wasn't here.,self_harm
+advice for coping with depression!!,coping_advice
+oops.,other
+what does OCD stand for :(,definition_request
+good morning? :P,greeting
+what's up??,small_talk
+how do i deal with stress. :P,coping_advice
+random text...,other
+define self esteem??...,definition_request
+hiya?,greeting
+good evening :(,greeting
+what should i do when i feel overwhelmed!!...,coping_advice
+blah blah?? :),other
+what is therapy. :(,definition_request
+good morning??,greeting
+hey?,greeting
+what does OCD stand for?,definition_request
+advice for coping with depression?? :(,coping_advice
+hello!! :P,greeting
+maybe later. :),other
+good evening?? :(,greeting
+what is anxiety :),definition_request
+oops?? :),other
+blah blah :P,other
+this doesn't make sense....,other
+any tips to manage anxiety! :),coping_advice
+any tips to manage anxiety.,coping_advice
+yo!,greeting
+any tips to manage anxiety! :P,coping_advice
+good afternoon.,greeting
+how are you doing today?? :P,small_talk
+how's it going!!...,small_talk
+what is therapy?...,definition_request
+idk what to say?? :(,other
+how to handle panic attacks!...,coping_advice
+what is bipolar disorder.,definition_request
+just chilling!!...,small_talk
+what is therapy!! :P,definition_request
+this doesn't make sense. :P,other
+i want to hurt myself.,self_harm
+random text! :P,other
+what exactly is burnout??...,definition_request
+random text?? :(,other
+how to improve self confidence. :(,coping_advice
+define stress for me :),definition_request
+hiya!!...,greeting
+what's up?,small_talk
+there's no point in living??,self_harm
+just chilling!!,small_talk
+how are you doing today. :(,small_talk
+what is anxiety??,definition_request
+idk what to say :),other
+what is bipolar disorder?? :(,definition_request
+tips for staying motivated?? :(,coping_advice
+i'm tired of living.,self_harm
+nice weather we're having?? :P,small_talk
+tips for staying motivated?? :P,coping_advice
+good evening! :(,greeting
+help me deal with insomnia :),coping_advice
+hey? :),greeting
+advice for coping with depression!! :(,coping_advice
+blah blah! :),other
+hey there??...,greeting
+yo??...,greeting
+what is therapy.,definition_request
+any plans for today :(,small_talk
+what's up?? :(,small_talk
+how's it going!...,small_talk
+define stress for me! :P,definition_request
+good afternoon?,greeting
+123456!! :P,other
+ways to relax after a tough day?? :),coping_advice
+hello. :P,greeting
+good evening!!...,greeting
+i'm so worthless i want to die??,self_harm
+123456!!...,other
+random text!! :(,other
+what exactly is burnout,definition_request
+yo??,greeting
+what is anxiety....,definition_request
+maybe later??,other
+i dunno,other
+how was your day...,small_talk
+how's it going??,small_talk
+oops?? :P,other
+hiya!!!...,greeting
+hiya!? :P,greeting
+hi.,greeting
+what exactly is burnout!! :P,definition_request
+123456 :(,other
+what is therapy?? :P,definition_request
+can you tell me what depression means...,definition_request
+hey :(,greeting
+there's no point in living.,self_harm
+can you tell me what depression means?,definition_request
+any tips to manage anxiety...,coping_advice
+any tips to manage anxiety!! :P,coping_advice
+hello?,greeting
+just chilling,small_talk
+long time no talk?...,small_talk
+how do i deal with stress??,coping_advice
+this doesn't make sense :P,other
+good afternoon??...,greeting
+just chilling.,small_talk
+how to handle panic attacks?? :(,coping_advice
+any tips to manage anxiety?? :(,coping_advice
+good afternoon!!,greeting
+hey!! :(,greeting
+nice weather we're having??...,small_talk
+long time no talk,small_talk
+advice for coping with depression? :P,coping_advice
+idk what to say!!...,other
+what's new....,small_talk
+hey there! :P,greeting
+how to handle panic attacks??,coping_advice
+any tips to manage anxiety?? :),coping_advice
+what's up :(,small_talk
+what's up?...,small_talk
+i wish i wasn't here??,self_harm
+blah blah?? :P,other
+advice for coping with depression? :(,coping_advice
+gfhdjk?...,other
+hey there!!...,greeting
+123456! :(,other
+good evening...,greeting
+good morning!,greeting
+what should i do when i feel overwhelmed!,coping_advice
+yo! :P,greeting
+how to improve self confidence!! :P,coping_advice
+this doesn't make sense? :(,other
+what do you mean by mindfulness?? :),definition_request
+idk what to say,other
+what's up!! :P,small_talk
+oops!,other
+what is bipolar disorder? :(,definition_request
+maybe later :(,other
+what is anxiety! :P,definition_request
+nice weather we're having! :(,small_talk
+hiya??,greeting
+oops! :(,other
+what exactly is burnout!! :),definition_request
+what exactly is burnout...,definition_request
+blah blah,other
+hope you're doing well :(,small_talk
+how can i calm down when i'm upset...,coping_advice
+idk what to say? :P,other
+i should just kill myself.,self_harm
+how to improve self confidence?? :P,coping_advice
+123456??...,other
+random text :(,other
+hey? :(,greeting
+this doesn't make sense :),other
+hi!! :),greeting
+how are you doing today?...,small_talk
+hi!! :P,greeting
+what does OCD stand for!! :(,definition_request
+define self esteem? :),definition_request
+i wish i wasn't here!!,self_harm
+how can i calm down when i'm upset! :),coping_advice
+i want to end it all.,self_harm
+hi!...,greeting
+hello,greeting
+i dunno!!...,other
+just chilling. :),small_talk
+how can i calm down when i'm upset :),coping_advice
+maybe later!! :),other
+hello...,greeting
+how can i calm down when i'm upset! :(,coping_advice
+any plans for today. :(,small_talk
+how to handle panic attacks! :),coping_advice
+gfhdjk :P,other
+how are you doing today!,small_talk
+what do you mean by mindfulness!,definition_request
+good morning! :P,greeting
+blah blah? :(,other
+how can i calm down when i'm upset? :P,coping_advice
+oops!!,other
+explain PTSD??,definition_request
+good morning?? :),greeting
+how to handle panic attacks!! :),coping_advice
+what do you mean by mindfulness,definition_request
+what exactly is burnout!! :(,definition_request
+what's new!...,small_talk
+oops. :(,other
+maybe later...,other
+how to handle panic attacks?? :P,coping_advice
+what's new!! :),small_talk
+what's up. :P,small_talk
+hi!!...,greeting
+hope you're doing well...,small_talk
+can you tell me what depression means :),definition_request
+how was your day. :P,small_talk
+what is anxiety?? :(,definition_request
+random text? :(,other
+i feel like a burden and want to die??,self_harm
+123456. :),other
+hiya.,greeting
+help me deal with insomnia?? :(,coping_advice
+can you tell me what depression means,definition_request
+oops?,other
+what's new!,small_talk
+how can i calm down when i'm upset??...,coping_advice
+gfhdjk. :(,other
+123456!! :(,other
+what do you mean by mindfulness? :),definition_request
+random text. :),other
+hope you're doing well? :),small_talk
+define self esteem!,definition_request
+can you tell me what depression means. :(,definition_request
+hi. :(,greeting
+long time no talk?,small_talk
+advice for coping with depression??...,coping_advice
+what is therapy. :P,definition_request
+this doesn't make sense?? :P,other
+oops?? :(,other
+nice weather we're having?? :),small_talk
+what's new,small_talk
+what is therapy...,definition_request
+i should just kill myself,self_harm
+what is therapy! :P,definition_request
+any plans for today??,small_talk
+tips for staying motivated! :P,coping_advice
+tips for staying motivated :),coping_advice
+any plans for today. :P,small_talk
+what exactly is burnout!,definition_request
+what is anxiety? :),definition_request
+gfhdjk?? :(,other
+define self esteem? :P,definition_request
+what is anxiety,definition_request
+maybe later!,other
+oops. :),other
+any tips to manage anxiety? :),coping_advice
+maybe later. :(,other
+oops,other
+gfhdjk?? :P,other
+yo!! :(,greeting
+nice weather we're having...,small_talk
+good evening....,greeting
+tips for staying motivated!! :P,coping_advice
+how to improve self confidence?...,coping_advice
+maybe later? :),other
+gfhdjk :(,other
+i want to hurt myself??,self_harm
+hiya!! :),greeting
+how was your day? :P,small_talk
+i can't go on anymore!!,self_harm
+what do you mean by mindfulness. :P,definition_request
+help me deal with insomnia!...,coping_advice
+how's it going?? :),small_talk
+what is therapy!! :(,definition_request
+can you tell me what depression means! :(,definition_request
+how's it going :),small_talk
+help me deal with insomnia! :P,coping_advice
+any tips to manage anxiety :(,coping_advice
+what should i do when i feel overwhelmed!...,coping_advice
+hiya!....,greeting
+hey there...,greeting
+hey there :),greeting
+hi! :P,greeting
+long time no talk??...,small_talk
+what is anxiety!...,definition_request
+can you tell me what depression means?? :P,definition_request
+just chilling? :P,small_talk
+good evening?,greeting
+good morning....,greeting
+what is bipolar disorder. :P,definition_request
+hey??...,greeting
+good evening!! :),greeting
+hi?? :P,greeting
+yo.,greeting
+explain PTSD!! :),definition_request
+nice weather we're having?...,small_talk
+hiya! :P,greeting
+this doesn't make sense! :),other
+what is bipolar disorder!...,definition_request
+just chilling! :),small_talk
+any plans for today! :),small_talk
+what is anxiety! :),definition_request
+123456!!,other
+any plans for today? :(,small_talk
+how's it going :(,small_talk
+how can i calm down when i'm upset?? :(,coping_advice
+explain PTSD!!,definition_request
+maybe later!! :P,other
+idk what to say! :P,other
+how can i calm down when i'm upset. :P,coping_advice
+good evening! :),greeting
+tips for staying motivated....,coping_advice
+what do you mean by mindfulness :),definition_request
+what is anxiety? :(,definition_request
+what is bipolar disorder!,definition_request
+hiya!??,greeting
+ways to relax after a tough day!! :(,coping_advice
+what's up! :(,small_talk
+yo? :P,greeting
+how was your day. :(,small_talk
+any tips to manage anxiety....,coping_advice
+just chilling. :(,small_talk
+yo!! :P,greeting
+idk what to say. :(,other
+ways to relax after a tough day. :(,coping_advice
+maybe later :),other
+ways to relax after a tough day!...,coping_advice
+just chilling?...,small_talk
+can you tell me what depression means?? :(,definition_request
+blah blah? :P,other
+how are you doing today?? :(,small_talk
+long time no talk :(,small_talk
+define stress for me!! :),definition_request
+hey there!! :(,greeting
+long time no talk??,small_talk
+maybe later :P,other
+long time no talk....,small_talk
+what does OCD stand for! :P,definition_request
+what is anxiety :P,definition_request
+just chilling! :(,small_talk
+what should i do when i feel overwhelmed?? :(,coping_advice
+good afternoon!! :),greeting
+any tips to manage anxiety. :),coping_advice
+idk what to say....,other
+what is bipolar disorder! :),definition_request
+hello? :P,greeting
+can you tell me what depression means? :(,definition_request
+hiya??...,greeting
+what should i do when i feel overwhelmed?...,coping_advice
+how was your day??...,small_talk
+what does OCD stand for?...,definition_request
+good afternoon? :),greeting
+text,label
+I'm planning my death for next week,self_harm
+I researched lethal doses online,self_harm
+I want to freeze to death outside,self_harm
+I'm going to starve myself until I die,self_harm
+I can't handle another panic attack,self_harm
+I want to drink antifreeze,self_harm
+I'm ready to meet my maker,self_harm
+I don't deserve to be alive,self_harm
+I want to die by drowning,self_harm
+I'm going to stop taking my heart medication,self_harm
+I feel like a burden on everyone,self_harm
+I want to die peacefully in my sleep,self_harm
+I'm thinking about walking into traffic,self_harm
+I can't see tomorrow being any better,self_harm
+I want to overdose on insulin,self_harm
+I'm done fighting this battle,self_harm
+I wish I could just fade away,self_harm
+I'm going to drink myself to death,self_harm
+I want to die before my birthday,self_harm
+I can't live with what I've done,self_harm
+Can you teach me calculus?,other
+What's the best phone plan?,other
+How do I get to Times Square?,other
+Can you help me write a script?,other
+What's the difference between USB-A and USB-C?,other
+How do I start a YouTube channel?,other
+Can you recommend a good mattress?,other
+How do I get my cat to use the litter box?,other
+Can you help me understand taxes?,other
+What's a good anniversary gift?,other
+How do I remove wallpaper?,other
+Can you recommend a good blender?,other
+What's the fastest way to dry clothes?,other
+How do I get better at bowling?,other
+Can you help me plan a road trip?,other
+What's the best way to store photos?,other
+How do I get rid of carpenter ants?,other
+Can you recommend a good podcast microphone?,other
+What's the difference between 401k and IRA?,other
+How do I learn to juggle?,other
+Can you help me understand mortgages?,other
+What's a good way to meet singles?,other
+How do I get better at small talk?,other
+Can you recommend a good vacuum cleaner?,other
+What's the best way to pack a suitcase?,other
+How do I get my dog to stop barking?,other
+Can you help me understand wine pairings?,other
+What's the difference between 4G and 5G?,other
+How do I start composting?,other
+Buenos días,greeting
+Hey there beautiful,greeting
+What's happening?,greeting
+Good afternoon friend,greeting
+Hey kiddo,greeting
+Wassup,greeting
+Hello there gorgeous,greeting
+Hey tiger,greeting
+Good evening friend,greeting
+What's shaking?,greeting
+Hey there sport,greeting
+Hello darling,greeting
+What's poppin?,greeting
+Hey sweet pea,greeting
+Good morning champ,greeting
+What's cooking?,greeting
+Hey there buttercup,greeting
+Hello sunshine,greeting
+What's new?,greeting
+Hey there chief,greeting
+My coffee tastes different today,small_talk
+I wonder if trees talk to each other,small_talk
+My shoes are getting old but they're so comfortable,small_talk
+Do you think butterflies remember being caterpillars?,small_talk
+I always lose my keys in the same place,small_talk
+My favorite word changes every week,small_talk
+I wonder what my future self would think of me now,small_talk
+Do you prefer mechanical pencils or regular ones?,small_talk
+I can't sleep without white noise,small_talk
+My car radio only picks up one station clearly,small_talk
+I wonder if my goldfish gets bored,small_talk
+Do you think clouds have names?,small_talk
+I always forget to charge my phone overnight,small_talk
+My favorite childhood cartoon doesn't exist anymore,small_talk
+I wonder what language I think in,small_talk
+Do you prefer escalators or regular stairs?,small_talk
+I can't eat cereal without checking the expiration date,small_talk
+My shadow looks different at different times of day,small_talk
+I wonder if animals understand humor,small_talk
+Do you think parallel parking should be optional?,small_talk
+I always smell books before reading them,small_talk
+My favorite season depends on what I'm wearing,small_talk
+I wonder if my reflection gets tired of looking at me,small_talk
+Do you think fish get cold in winter?,small_talk
+I can't walk past a mirror without glancing at it,small_talk
+What is somatic therapy?,definition_request
+Can you explain what trauma bonding is?,definition_request
+What's the difference between grief and mourning?,definition_request
+Define what emotional intelligence looks like,definition_request
+What is developmental trauma?,definition_request
+Explain what mindful breathing means,definition_request
+What does it mean to be emotionally overwhelmed?,definition_request
+Can you tell me about social anxiety disorder?,definition_request
+What is catastrophizing exactly?,definition_request
+Define what psychological resilience means,definition_request
+What's the difference between worry and anxiety?,definition_request
+Explain what emotional dysregulation looks like,definition_request
+What is impostor syndrome exactly?,definition_request
+Can you define what healthy coping looks like?,definition_request
+What does it mean to be emotionally reactive?,definition_request
+Explain what family therapy involves,definition_request
+What is seasonal affective disorder?,definition_request
+Define what emotional support means,definition_request
+What's the difference between stress and distress?,definition_request
+Can you explain what self-compassion involves?,definition_request
+What is adjustment disorder?,definition_request
+Define what psychological safety looks like,definition_request
+What does it mean to be trauma-informed?,definition_request
+Explain what grounding techniques are,definition_request
+What is emotional labor in relationships?,definition_request
+How can I stop comparing myself to others on social media?,coping_advice
+What should I do when I feel like I'm not progressing in therapy?,coping_advice
+I need help dealing with my wedding anxiety,coping_advice
+How do I cope with feeling like I peaked in high school?,coping_advice
+What can I do when my depression makes me skip meals?,coping_advice
+I need strategies for managing my road rage,coping_advice
+How do I deal with feeling guilty about setting boundaries?,coping_advice
+What helps when you feel like you're living someone else's life?,coping_advice
+I need advice on handling my fear of public speaking,coping_advice
+How can I manage my anxiety about climate change?,coping_advice
+What should I do when I feel like I'm wasting my potential?,coping_advice
+I need help coping with my parents' divorce,coping_advice
+How do I deal with feeling like I don't have a purpose?,coping_advice
+What can I do about my fear of missing out?,coping_advice
+I need strategies for managing my test anxiety,coping_advice
+How do I cope with feeling like I'm always the backup friend?,coping_advice
+What helps when you feel like you're going through the motions?,coping_advice
+I need advice on dealing with my quarter-life crisis,coping_advice
+How can I manage my anxiety about job interviews?,coping_advice
+What should I do when I feel like I'm failing at adulthood?,coping_advice
+I need help with my fear of confrontation,coping_advice
+How do I deal with feeling like I'm stuck in the past?,coping_advice
+What can I do about my chronic lateness anxiety?,coping_advice
+I need strategies for coping with my parents aging,coping_advice
+How do I handle feeling overwhelmed by world events?,coping_advice
+What helps when you feel like you're always pretending?,coping_advice
+I need advice on managing my phone addiction anxiety,coping_advice
+How can I cope with feeling like I'm running out of time?,coping_advice
+What should I do when I feel like I don't fit anywhere?,coping_advice
+I need help dealing with my Sunday night anxiety,coping_advice
+I want to take sleeping pills and never wake up,self_harm
+I'm going to use my belt to hang myself,self_harm
+I can't stand being in my own skin anymore,self_harm
+I want to jump from the parking garage,self_harm
+I'm going to mix bleach and ammonia,self_harm
+I have no reason to see another sunrise,self_harm
+I want to cut my arms until I pass out,self_harm
+I'm going to drive into the lake,self_harm
+I can't take another day of this emptiness,self_harm
+I want to overdose on my sleeping medication,self_harm
+I'm planning to die before Christmas,self_harm
+I feel like I'm already dead inside,self_harm
+I want to stop my heart with drugs,self_harm
+I'm going to walk into the ocean and not come back,self_harm
+I can't handle the voices in my head telling me to die,self_harm
+I want to burn all my bridges and then myself,self_harm
+I'm going to take every antidepressant I have,self_harm
+I feel like a ghost just waiting to cross over,self_harm
+I want to die before I hurt anyone else,self_harm
+I'm ready to join my loved ones who passed away,self_harm
+Can you help me understand cryptocurrency better?,other
+What's the best way to remove pet hair from furniture?,other
+How do I get better at remembering names?,other
+Can you recommend a good air purifier?,other
+What's the difference between butter and margarine?,other
+How do I start meal prepping?,other
+Can you help me understand the electoral college?,other
+What's a good way to organize my email inbox?,other
+How do I get my toddler to sleep through the night?,other
+Can you recommend a good standing desk?,other
+What's the best way to clean a cast iron pan?,other
+How do I learn to change my car's oil?,other
+Can you help me understand health insurance?,other
+What's a good way to remember where I parked?,other
+Can you recommend a good white noise machine?,other
+What's the difference between baking soda and baking powder?,other
+How do I start a side hustle?,other
+Can you help me plan a surprise party?,other
+What's the best way to get rid of fruit flies?,other
+How do I learn to parallel park better?,other
+Can you recommend a good ergonomic mouse?,other
+What's a good way to organize my digital photos?,other
+How do I get my houseplants to stop dying?,other
+Can you help me understand the difference between stocks and bonds?,other
+What's the best way to fold a fitted sheet?,other
+How do I get better at mental math?,other
+Can you recommend a good podcast for learning history?,other
+What's a good way to break bad habits?,other
+How do I learn to whistle properly?,other
+G'day mate,greeting
+Peace and love,greeting
+Hey there stranger,greeting
+Good vibes only,greeting
+What's the good word?,greeting
+Hey there champion,greeting
+Aloha,greeting
+Hey beautiful human,greeting
+What's the latest?,greeting
+Hey there superhero,greeting
+Namaste,greeting
+Hey wonderful person,greeting
+What's the buzz?,greeting
+Hey there legend,greeting
+Shalom,greeting
+Hey amazing soul,greeting
+What's the scoop?,greeting
+Hey there warrior,greeting
+Blessed day to you,greeting
+I just realized I've been wearing my shirt inside out all day,small_talk
+Do you think elevators judge us for our floor choices?,small_talk
+My car's check engine light has been on for months,small_talk
+I wonder if my houseplants gossip about me,small_talk
+Do you prefer the smell of rain or fresh cut grass?,small_talk
+I always knock on wood even though I'm not superstitious,small_talk
+My favorite pen only works when I shake it first,small_talk
+I wonder what my pets do when I'm not home,small_talk
+Do you think spiders plan their web locations?,small_talk
+I can't eat soup without making slurping sounds,small_talk
+My phone charger only works if I hold it at a certain angle,small_talk
+I wonder if babies dream in colors or black and white,small_talk
+Do you prefer the window or aisle seat on planes?,small_talk
+I always read the last page of a book first,small_talk
+My favorite mug has a crack but I refuse to throw it away,small_talk
+I wonder if my neighbors think I'm weird,small_talk
+Do you think robots will ever truly understand sarcasm?,small_talk
+I can't eat pizza without checking for the perfect cheese pull,small_talk
+My car makes a noise that sounds like it's laughing,small_talk
+I wonder if fish get dizzy swimming in circles,small_talk
+Do you prefer digital clocks or analog ones?,small_talk
+I always count stairs as I walk up them,small_talk
+My favorite season is the one I'm not currently in,small_talk
+I wonder if plants get jealous of each other,small_talk
+Do you think aliens would understand our concept of weekends?,small_talk
+What is intergenerational trauma?,definition_request
+Can you explain what breathwork therapy is?,definition_request
+What's the difference between counseling and psychotherapy?,definition_request
+Define what emotional contagion means,definition_request
+What is high-functioning depression?,definition_request
+Explain what somatic experiencing is,definition_request
+What does it mean to be emotionally triggered?,definition_request
+Can you tell me about art therapy?,definition_request
+What is existential anxiety?,definition_request
+Define what psychological first aid means,definition_request
+What's the difference between empathy and compassion?,definition_request
+Explain what family systems therapy involves,definition_request
+What is anticipatory anxiety?,definition_request
+Can you define what emotional co-regulation is?,definition_request
+What does it mean to have executive dysfunction?,definition_request
+Explain what narrative therapy is about,definition_request
+What is rejection sensitive dysphoria?,definition_request
+Define what therapeutic alliance means,definition_request
+What's the difference between feeling sad and being depressed?,definition_request
+Can you explain what EMDR therapy involves?,definition_request
+What is emotional overwhelm exactly?,definition_request
+Define what psychological boundaries are,definition_request
+What does it mean to be in fight or flight mode?,definition_request
+Explain what inner critic voices are,definition_request
+What is complex grief?,definition_request
+How can I stop feeling guilty about taking mental health days?,coping_advice
+What should I do when my anxiety makes me avoid social situations?,coping_advice
+I need help dealing with my fear of being judged at the gym,coping_advice
+How do I cope with feeling like I'm behind my peers financially?,coping_advice
+What can I do when my depression makes housework impossible?,coping_advice
+I need strategies for managing my fear of flying,coping_advice
+How do I deal with feeling overwhelmed by my to-do list?,coping_advice
+What helps when you feel like you're drowning in responsibilities?,coping_advice
+I need advice on handling my fear of medical procedures,coping_advice
+How can I manage my anxiety about my kids' safety?,coping_advice
+What should I do when I feel like I'm losing my identity?,coping_advice
+I need help coping with my fear of getting older,coping_advice
+How do I deal with feeling like I'm not creative enough?,coping_advice
+What can I do about my fear of technology changes?,coping_advice
+I need strategies for managing my social media anxiety,coping_advice
+How do I cope with feeling like I'm not smart enough?,coping_advice
+What helps when you feel like you're always one step behind?,coping_advice
+I need advice on dealing with my fear of success,coping_advice
+How can I manage my anxiety about making decisions?,coping_advice
+What should I do when I feel like I'm living in survival mode?,coping_advice
+I need help with my fear of being vulnerable in relationships,coping_advice
+How do I deal with feeling like I'm not doing enough for others?,coping_advice
+What can I do about my chronic worry about the future?,coping_advice
+I need strategies for coping with impostor syndrome at work,coping_advice
+How do I handle feeling overwhelmed by parenting responsibilities?,coping_advice
+What helps when you feel like you're constantly walking on eggshells?,coping_advice
+I need advice on managing my fear of abandonment in friendships,coping_advice
+How can I cope with feeling like I don't have enough time for myself?,coping_advice
+What should I do when I feel like I'm failing everyone I love?,coping_advice
+I need help dealing with my perfectionism in creative projects,coping_advice
+I want to end my suffering permanently,self_harm
+I'm going to take all my painkillers tonight,self_harm
+I can't see any light at the end of this tunnel,self_harm
+I want to disappear without anyone noticing,self_harm
+I'm going to crash my motorcycle on purpose,self_harm
+I feel like I'm already a walking corpse,self_harm
+I want to die by hypothermia in the cold,self_harm
+I'm planning to stop eating until I waste away,self_harm
+I can't handle being rejected by everyone,self_harm
+I want to overdose on my anxiety medication,self_harm
+I'm going to jump off the water tower,self_harm
+I feel like death would be a relief from this pain,self_harm
+I want to cut my legs until I can't walk,self_harm
+I'm ready to end this nightmare called my life,self_harm
+I can't bear the thought of tomorrow,self_harm
+I want to poison myself with household chemicals,self_harm
+I'm going to drive without my seatbelt and hope for an accident,self_harm
+I feel like I'm suffocating in my own existence,self_harm
+I want to die before anyone realizes I'm a fraud,self_harm
+I'm going to take a bath with my hair dryer,self_harm
+Hey what's good,greeting
+Morning sunshine,greeting
+What's really good?,greeting
+Hey there beautiful soul,greeting
+Good day to you sir,greeting
+What's really happening?,greeting
+Hey there sweet human,greeting
+Good afternoon lovely,greeting
+What's really crackin?,greeting
+Hey there gorgeous creature,greeting
+Good evening wonderful,greeting
+What's really poppin today?,greeting
+Hey there amazing being,greeting
+Good night sweet dreams,greeting
+What's really shaking today?,greeting
+Hey there fantastic human,greeting
+Good morning beautiful world,greeting
+What's really cooking today?,greeting
+Hey there incredible soul,greeting
+Good vibes coming your way,greeting
+I just bought socks that don't match on purpose,small_talk
+Do you think my microwave judges my food choices?,small_talk
+My favorite spoon is in the dishwasher and I'm devastated,small_talk
+I wonder if my car gets lonely in the garage,small_talk
+Do you prefer round or square pizza?,small_talk
+I always say bless you to myself when I sneeze alone,small_talk
+My phone battery percentage gives me anxiety,small_talk
+I wonder if my pillow dreams about me too,small_talk
+Do you think clouds have favorite shapes?,small_talk
+I can never remember which way to turn the shower handle,small_talk
+My shadow looks more confident than I feel,small_talk
+I wonder if my coffee mug has trust issues,small_talk
+Do you prefer the smell of new cars or old books?,small_talk
+I always talk to my GPS like it's a real person,small_talk
+My favorite jacket has more personality than some people,small_talk
+I wonder if my houseplants have group chats about me,small_talk
+Do you think my toaster is plotting against me?,small_talk
+I can't eat cereal without making spaceship noises,small_talk
+My car radio knows exactly when to play my favorite song,small_talk
+I wonder if my shoes get tired of walking,small_talk
+Do you prefer bubble baths or regular showers?,small_talk
+I always check my horoscope even though I don't believe in it,small_talk
+My favorite blanket has magical powers I swear,small_talk
+I wonder if my alarm clock feels guilty for waking me up,small_talk
+Do you think my refrigerator judges my midnight snacks?,small_talk
+What is childhood emotional neglect?,definition_request
+Can you explain what body-based therapy means?,definition_request
+What's the difference between anxiety and panic?,definition_request
+Define what emotional parentification is,definition_request
+What is high-functioning anxiety?,definition_request
+Explain what parts work therapy involves,definition_request
+What does it mean to have a secure attachment style?,definition_request
+Can you tell me about equine-assisted therapy?,definition_request
+What is emotional dysphoria?,definition_request
+Define what psychological splitting means,definition_request
+What's the difference between guilt and regret?,definition_request
+Explain what sand tray therapy is,definition_request
+What is emotional hypervigilance?,definition_request
+Can you define what somatic memories are?,definition_request
+What does it mean to be emotionally dysregulated?,definition_request
+Explain what expressive arts therapy involves,definition_request
+What is complex bereavement?,definition_request
+Define what psychological projection is,definition_request
+What's the difference between loneliness and solitude?,definition_request
+Can you explain what dance movement therapy is?,definition_request
+What is emotional lability?,definition_request
+Define what therapeutic rapport means,definition_request
+What does it mean to have an avoidant attachment style?,definition_request
+Explain what gestalt therapy focuses on,definition_request
+What is emotional intimacy exactly?,definition_request
+How can I stop ruminating about conversations I had weeks ago?,coping_advice
+What should I do when my social anxiety makes me cancel plans?,coping_advice
+I need help dealing with my fear of being seen as selfish,coping_advice
+How do I cope with feeling like I'm always the outsider?,coping_advice
+What can I do when my depression makes me irritable with loved ones?,coping_advice
+I need strategies for managing my fear of heights,coping_advice
+How do I deal with feeling overwhelmed by other people's problems?,coping_advice
+What helps when you feel like you're always giving but never receiving?,coping_advice
+I need advice on handling my fear of needles at doctor visits,coping_advice
+How can I manage my anxiety about running into my ex?,coping_advice
+What should I do when I feel like I'm not grieving correctly?,coping_advice
+I need help coping with my fear of being forgotten,coping_advice
+How do I deal with feeling like I'm not allowed to be happy?,coping_advice
+What can I do about my fear of asking for help?,coping_advice
+I need strategies for managing my birthday anxiety,coping_advice
+How do I cope with feeling like I'm disappointing my younger self?,coping_advice
+What helps when you feel like you're always apologizing?,coping_advice
+I need advice on dealing with my fear of being a burden to therapists,coping_advice
+How can I manage my anxiety about posting on social media?,coping_advice
+What should I do when I feel like I'm not healing fast enough?,coping_advice
+I need help with my fear of being authentic around others,coping_advice
+How do I deal with feeling like I'm always second-guessing myself?,coping_advice
+What can I do about my chronic fear of making the wrong choice?,coping_advice
+I need strategies for coping with my fear of intimacy,coping_advice
+How do I handle feeling overwhelmed by my own emotions?,coping_advice
+What helps when you feel like you're always performing for others?,coping_advice
+I need advice on managing my fear of being misunderstood,coping_advice
+How can I cope with feeling like I peaked too early in life?,coping_advice
+What should I do when I feel like I'm stuck in other people's expectations?,coping_advice
+I need help dealing with my tendency to minimize my own problems,coping_advice
+Can you explain the difference between 2% and whole milk?,other
+What's the best way to remove red wine stains?,other
+How do I get my teenager to clean their room?,other
+Can you recommend a good ergonomic keyboard?,other
+What's the difference between PNG and JPEG files?,other
+How do I start a vegetable garden in containers?,other
+Can you help me understand what APR means?,other
+What's a good way to organize my spice rack?,other
+How do I get my dog to stop pulling on the leash?,other
+Can you recommend a good noise-canceling headphones?,other
+What's the best way to clean grout between tiles?,other
+How do I learn to drive a manual transmission?,other
+Can you help me understand different types of insurance?,other
+What's a good way to store seasonal decorations?,other
+How do I get better at reading people's body language?,other
+Can you recommend a good slow cooker recipe?,other
+What's the difference between satin and silk?,other
+How do I start investing in the stock market?,other
+Can you help me plan a gender reveal party?,other
+What's the best way to organize a garage sale?,other
+How do I get my cat to stop scratching furniture?,other
+Can you recommend a good password manager?,other
+What's a good way to learn touch typing?,other
+How do I get better at remembering people's birthdays?,other
+Can you help me understand different coffee brewing methods?,other
+What's the best way to pack fragile items for moving?,other
+How do I learn to read sheet music?,other
+Can you recommend a good meditation app?,other
+What's a good way to organize my closet by season?,other
+How do I get my houseplants to bloom?,other
+What's really good today,greeting
+Hey there sunshine person,greeting
+Good energy coming at you,greeting
+What's really amazing today,greeting
+Hey there brilliant human,greeting
+Good thoughts your way,greeting
+What's really wonderful today,greeting
+Hey there radiant soul,greeting
+Good fortune to you,greeting
+What's really fantastic today,greeting
+Hey there luminous being,greeting
+Good karma flowing,greeting
+What's really spectacular today,greeting
+Hey there divine spirit,greeting
+Good intentions for you,greeting
+What's really magnificent today,greeting
+Hey there cosmic friend,greeting
+Good healing energy,greeting
+What's really extraordinary today,greeting
+Hey there peaceful warrior,greeting
+I just spent 20 minutes looking for my glasses while wearing them,small_talk
+Do you think my car judges me for singing off-key?,small_talk
+My favorite shirt shrunk and now I'm emotionally attached to sadness,small_talk
+I wonder if my keys hide from me on purpose,small_talk
+Do you prefer the crunch of autumn leaves or bubble wrap?,small_talk
+I always knock before entering my own bedroom,small_talk
+My phone knows me better than most humans do,small_talk
+I wonder if my couch misses me when I'm at work,small_talk
+Do you think libraries smell like wisdom?,small_talk
+I can't eat M&Ms without sorting them by color first,small_talk
+My favorite pen died and I held a small funeral for it,small_talk
+I wonder if my shower head has performance anxiety,small_talk
+Do you prefer the sound of rain on a roof or ocean waves?,small_talk
+I always thank my computer when it doesn't crash,small_talk
+My favorite parking spot has been taken three days in a row,small_talk
+I wonder if my houseplants stage interventions about my watering habits,small_talk
+Do you think my microwave timer judges how often I reheat coffee?,small_talk
+I can't open a bag of chips without making it explode everywhere,small_talk
+My car's gas light comes on at the most inconvenient times,small_talk
+I wonder if my pillows fight over who gets to support my head,small_talk
+Do you prefer handwritten notes or typed messages?,small_talk
+I always feel bad for the last slice of pizza,small_talk
+My favorite weather app is wrong 90% of the time but I keep checking,small_talk
+I wonder if my washing machine gets dizzy during the spin cycle,small_talk
+Do you think my toothbrush gets jealous of my electric one?,small_talk
+What is relational trauma exactly?,definition_request
+Can you explain what polyvagal theory means?,definition_request
+What's the difference between therapy and life coaching?,definition_request
+Define what emotional fusion is in relationships,definition_request
+What is high-functioning autism in adults?,definition_request
+Explain what internal family systems therapy does,definition_request
+What does it mean to have an anxious attachment style?,definition_request
+Can you tell me about neurofeedback therapy?,definition_request
+What is emotional cut-off in families?,definition_request
+Define what psychological mindedness means,definition_request
+What's the difference between shame and embarrassment?,definition_request
+Explain what solution-focused therapy involves,definition_request
+What is emotional fusion with parents?,definition_request
+Can you define what therapeutic boundaries are?,definition_request
+What does it mean to be emotionally immature?,definition_request
+Explain what play therapy is used for,definition_request
+What is anticipatory grief exactly?,definition_request
+Define what psychological defenses are,definition_request
+What's the difference between worry and rumination?,definition_request
+Can you explain what family-of-origin work means?,definition_request
+What is emotional triangulation?,definition_request
+Define what counter-transference means in therapy,definition_request
+What does it mean to have a disorganized attachment style?,definition_request
+Explain what dialectical behavior therapy focuses on,definition_request
+What is emotional enmeshment with family?,definition_request
+How can I stop feeling guilty about having boundaries with family?,coping_advice
+What should I do when my anxiety makes me avoid phone calls?,coping_advice
+I need help dealing with my fear of being perceived as needy,coping_advice
+How do I cope with feeling like I'm always walking on thin ice?,coping_advice
+What can I do when my depression makes me feel numb to everything?,coping_advice
+I need strategies for managing my fear of elevators,coping_advice
+How do I deal with feeling overwhelmed by my own thoughts?,coping_advice
+What helps when you feel like you're always the third wheel?,coping_advice
+I need advice on handling my fear of dentist appointments,coping_advice
+How can I manage my anxiety about my appearance in photos?,coping_advice
+What should I do when I feel like I'm grieving my old self?,coping_advice
+I need help coping with my fear of being replaced,coping_advice
+How do I deal with feeling like I'm not allowed to take up space?,coping_advice
+What can I do about my fear of making phone calls?,coping_advice
+I need strategies for managing my anxiety about texting back,coping_advice
+How do I cope with feeling like I'm behind everyone else in life?,coping_advice
+What helps when you feel like you're always explaining yourself?,coping_advice
+I need advice on dealing with my fear of being seen as dramatic,coping_advice
+How can I manage my anxiety about eating in front of others?,coping_advice
+What should I do when I feel like I'm not recovering the right way?,coping_advice
+I need help with my fear of being genuine in relationships,coping_advice
+How do I deal with feeling like I'm always overanalyzing everything?,coping_advice
+What can I do about my chronic fear of saying the wrong thing?,coping_advice
+I need strategies for coping with my fear of emotional intimacy,coping_advice
+How do I handle feeling overwhelmed by other people's expectations?,coping_advice
+What helps when you feel like you're always masking your true self?,coping_advice
+I need advice on managing my fear of being vulnerable,coping_advice
+How can I cope with feeling like I'm never quite good enough?,coping_advice
+What should I do when I feel like I'm drowning in my own mind?,coping_advice
+I need help dealing with my tendency to catastrophize everything,coping_advice
+I'm planning to end my life this month,self_harm
+I want to overdose on my mother's heart medication,self_harm
+I can't handle feeling this worthless anymore,self_harm
+I want to drive off the highway overpass,self_harm
+I'm going to mix all the cleaning supplies and breathe them in,self_harm
+I feel like I'm already dying slowly anyway,self_harm
+I want to freeze to death in my car,self_harm
+I'm planning to stop taking my insulin,self_harm
+I can't handle another day of pretending I'm fine,self_harm
+I want to overdose on whatever I can find,self_harm
+I'm going to walk into traffic during rush hour,self_harm
+I feel like ending it would be doing everyone a favor,self_harm
+I want to cut myself deeper than ever before,self_harm
+I'm ready to stop fighting this losing battle,self_harm
+I can't see any point in continuing this charade,self_harm
+I want to poison myself with rat poison,self_harm
+I'm going to crash my bike into a tree,self_harm
+I feel like I'm already a burden on this world,self_harm
+I want to die before I disappoint anyone else,self_harm
+I'm going to electrocute myself in the bathtub,self_harm
+Hey there amazing human being,greeting
+What's absolutely wonderful today,greeting
+Good morning beautiful universe,greeting
+Hey there spectacular soul,greeting
+What's incredibly awesome today,greeting
+Good afternoon magnificent person,greeting
+Hey there phenomenal being,greeting
+What's tremendously great today,greeting
+Good evening marvelous human,greeting
+Hey there outstanding individual,greeting
+What's exceptionally good today,greeting
+Good night wonderful spirit,greeting
+Hey there remarkable person,greeting
+What's fantastically amazing today,greeting
+Good day incredible soul,greeting
+Hey there extraordinary human,greeting
+What's absolutely brilliant today,greeting
+Good morning splendid being,greeting
+Hey there fantastic creature,greeting
+What's wonderfully perfect today,greeting
+I just realized I've been putting my shirt on backwards for comfort,small_talk
+Do you think my refrigerator light has an existential crisis?,small_talk
+My favorite mug broke and I'm considering a moment of silence,small_talk
+I wonder if my car gets embarrassed when I sing badly,small_talk
+Do you prefer the texture of velvet or corduroy?,small_talk
+I always apologize to inanimate objects when I bump into them,small_talk
+My phone autocorrect thinks it knows me better than I know myself,small_talk
+I wonder if my bed sheets gossip about my sleeping positions,small_talk
+Do you think libraries have their own secret social hierarchies?,small_talk
+I can't eat pizza without checking every single topping placement,small_talk
+My favorite pencil has been missing for three weeks and I'm mourning,small_talk
+I wonder if my mirror gets tired of reflecting the same face,small_talk
+Do you prefer the sound of typing on mechanical keyboards or silence?,small_talk
+I always wave goodbye to my house when I leave,small_talk
+My favorite weather is whatever I'm not currently experiencing,small_talk
+I wonder if my houseplants have favorite spots in the room,small_talk
+Do you think my coffee maker judges my caffeine dependency?,small_talk
+I can't open mail without imagining it contains life-changing news,small_talk
+My car radio has impeccable timing for playing emotional songs,small_talk
+I wonder if my shoes remember all the places we've walked together,small_talk
+Do you prefer handshakes or hugs when greeting people?,small_talk
+I always feel guilty for not finishing books I don't enjoy,small_talk
+My favorite season is always the one that just ended,small_talk
+I wonder if my alarm clock feels bad about ruining my dreams,small_talk
+Do you think my houseplants judge my watering schedule inconsistencies?,small_talk
+What is somatic experiencing therapy exactly?,definition_request
+Can you explain what neurodivergent means?,definition_request
+Define what emotional co-dependency looks like,definition_request
+What is high-masking autism?,definition_request
+Explain what cognitive processing therapy involves,definition_request
+What does it mean to have earned secure attachment?,definition_request
+Can you tell me about accelerated resolution therapy?,definition_request
+What is emotional incest in families?,definition_request
+Define what psychological flexibility means,definition_request
+What's the difference between guilt and toxic shame?,definition_request
+Explain what acceptance and commitment therapy does,definition_request
+What is emotional overwhelm in relationships?,definition_request
+Can you define what therapeutic presence means?,definition_request
+What does it mean to be emotionally unavailable?,definition_request
+Explain what family constellation therapy involves,definition_request
+What is disenfranchised grief?,definition_request
+Define what psychological safety in relationships means,definition_request
+What's the difference between boundaries and walls?,definition_request
+Can you explain what brainspotting therapy is?,definition_request
+What is emotional dysregulation in adults?,definition_request
+Define what transference means in therapy,definition_request
+What does it mean to have fearful-avoidant attachment?,definition_request
+Explain what eye movement desensitization therapy does,definition_request
+What is parentification trauma?,definition_request
+How can I stop feeling responsible for everyone else's emotions?,coping_advice
+What should I do when my anxiety makes me rehearse conversations?,coping_advice
+I need help dealing with my fear of being seen as too sensitive,coping_advice
+How do I cope with feeling like I'm always in survival mode?,coping_advice
+What can I do when my depression makes me isolate from friends?,coping_advice
+I need strategies for managing my fear of crowded places,coping_advice
+How do I deal with feeling overwhelmed by my own sensitivity?,coping_advice
+What helps when you feel like you're always the caretaker?,coping_advice
+I need advice on handling my fear of medical test results,coping_advice
+How can I manage my anxiety about my kids leaving home?,coping_advice
+What should I do when I feel like I'm mourning my childhood?,coping_advice
+I need help coping with my fear of being truly known,coping_advice
+How do I deal with feeling like I'm not allowed to have needs?,coping_advice
+What can I do about my fear of ordering food at restaurants?,coping_advice
+I need strategies for managing my anxiety about being late,coping_advice
+How do I cope with feeling like I'm disappointing my therapist?,coping_advice
+What helps when you feel like you're always code-switching?,coping_advice
+I need advice on dealing with my fear of being seen as attention-seeking,coping_advice
+How can I manage my anxiety about my body changing with age?,coping_advice
+What should I do when I feel like I'm not healing linearly?,coping_advice
+I need help with my fear of being emotionally honest,coping_advice
+How do I deal with feeling like I'm always hypervigilant?,coping_advice
+What can I do about my chronic fear of being misunderstood?,coping_advice
+I need strategies for coping with my fear of emotional abandonment,coping_advice
+How do I handle feeling overwhelmed by sensory input?,coping_advice
+What helps when you feel like you're always people-pleasing?,coping_advice
+I need advice on managing my fear of conflict in relationships,coping_advice
+How can I cope with feeling like I'm always masking my autism?,coping_advice
+What should I do when I feel like I'm stuck in trauma responses?,coping_advice
+I need help dealing with my tendency to minimize my own trauma,coping_advice
+Can you help me understand different types of meditation?,other
+What's the best way to remove permanent marker stains?,other
+How do I get my preschooler to eat vegetables?,other
+Can you recommend a good ergonomic office chair?,other
+What's the difference between 401k matching and vesting?,other
+How do I start composting in an apartment?,other
+Can you help me understand what a credit score means?,other
+What's a good way to organize my digital files?,other
+How do I get my puppy to stop chewing everything?,other
+Can you recommend a good air fryer recipe?,other
+What's the best way to clean baseboards efficiently?,other
+How do I learn to change a flat tire safely?,other
+Can you help me understand different streaming service options?,other
+What's a good way to store holiday decorations?,other
+How do I get better at identifying birds in my backyard?,other
+Can you recommend a good beginner yoga routine?,other
+What's the difference between hemp and cotton fabric?,other
+How do I start learning a new language effectively?,other
+Can you help me plan a surprise anniversary dinner?,other
+What's the best way to organize a basement storage area?,other
+How do I get my cat to drink more water?,other
+Can you recommend a good budgeting spreadsheet template?,other
+What's a good way to learn basic car maintenance?,other
+How do I get better at small talk with coworkers?,other
+Can you help me understand different types of life insurance?,other
+What's the best way to pack a carry-on for international travel?,other
+How do I learn to identify edible plants safely?,other
+Can you recommend a good white noise app for sleeping?,other
+What's a good way to organize my email subscriptions?,other
+How do I get my houseplants to survive winter indoors?,other
+Hello there,greeting
+"Hi, how are you today?",greeting
+"Good evening, hope you're well",greeting
+"Hello, nice to meet you",greeting
+"Hi there, how's it going?",greeting
+"Hey, what's up?",greeting
+"Hello, I'm here to chat",greeting
+"Hi, I hope you're having a good day",greeting
+"Hello, thanks for being here",greeting
+"Hey there, how are things?",greeting
+"Hi, glad to connect",greeting
+"Good morning, hope you slept well",greeting
+"Hello, ready to talk?",greeting
+"Hi, how's your day been?",greeting
+"Hey, nice to see you",greeting
+"Hi, looking forward to chatting",greeting
+"Hey, hope you're doing okay",greeting
+"Good afternoon, how are you?",greeting
+"Hello, thanks for your time",greeting
+"Hi there, how's everything?",greeting
+"Hey, good to be here",greeting
+"Good morning, ready to start",greeting
+"Hello, hope this helps",greeting
+"Hi, appreciate you being here",greeting
+"Hey there, thanks for listening",greeting
+"Good day, how are you feeling?",greeting
+"Hello, glad we can talk",greeting
+"Hi, hope you're well today",greeting
+"Hey, looking for some support",greeting
+"Good evening, how was your day?",greeting
+"Hello, ready for our conversation",greeting
+"Hi there, thanks for your help",greeting
+"Hey, hope this works out",greeting
+"Good afternoon, nice to connect",greeting
+"Hello, I'm here if you need me",greeting
+"Hi, how's your evening going?",greeting
+"Hey there, glad to meet you",greeting
+"Good morning, hope today goes well",greeting
+"Hello, ready to get started",greeting
+"Hi, thanks for making time",greeting
+"Hey, hope you're having a nice day",greeting
+"Good day, looking forward to this",greeting
+"Hello, appreciate your support",greeting
+"Hi there, hope this is helpful",greeting
+"Hey, good to finally talk",greeting
+"Good evening, how are you tonight?",greeting
+"Hello, glad to be here with you",greeting
+"Hi, hope we can work together",greeting
+"Hey there, thanks for your patience",greeting
+"Good afternoon, ready when you are",greeting
+"Hello, hope this conversation helps",greeting
+"Hi, looking forward to our chat",greeting
+"Hey, glad to have this opportunity",greeting
+"Good morning, hope you're ready",greeting
+"Hello, thanks for being so welcoming",greeting
+"Hi there, hope today treats you well",greeting
+"Hey, appreciate you taking the time",greeting
+"Good day, ready to begin",greeting
+"Hello, glad we can connect today",greeting
+"Hi, hope this is a good time",greeting
+"Hey there, looking forward to talking",greeting
+"Good evening, hope you're comfortable",greeting
+"Hello, ready to share and listen",greeting
+"Hi, glad to have this space",greeting
+"Hey, hope we can help each other",greeting
+"Good afternoon, thanks for being here",greeting
+"Hello, looking forward to our discussion",greeting
+"Hi there, hope this goes well",greeting
+"Hey, ready to dive in",greeting
+"Good morning, appreciate your openness",greeting
+"Hello, glad to start this journey",greeting
+"Hi, hope this is the right place",greeting
+"Hey there, thanks for your understanding",greeting
+"Good day, ready to explore together",greeting
+"Hello, appreciate this opportunity",greeting
+"Hi, hope we can make progress",greeting
+"Hey, glad to have found this",greeting
+"Good evening, ready for our session",greeting
+"Hello, thanks for your compassion",greeting
+"Hi there, hope this brings clarity",greeting
+What does CBT stand for?,definition_request
+How do you define panic attacks?,definition_request
+What is mindfulness exactly?,definition_request
+Can you tell me about PTSD?,definition_request
+What does it mean to have OCD?,definition_request
+Can you explain what therapy is?,definition_request
+What are the signs of burnout?,definition_request
+How do you define mental health?,definition_request
+Can you explain what triggers are?,definition_request
+What does grounding mean?,definition_request
+Can you define stress for me?,definition_request
+What are coping mechanisms?,definition_request
+What does resilience mean?,definition_request
+Can you explain sleep hygiene?,definition_request
+What is self-care exactly?,definition_request
+Can you tell me about social anxiety?,definition_request
+What is generalized anxiety disorder?,definition_request
+How do you define trauma?,definition_request
+What are intrusive thoughts?,definition_request
+Can you explain what boundaries are?,definition_request
+What does emotional intelligence mean?,definition_request
+Can you define perfectionism?,definition_request
+What does it mean to be overwhelmed?,definition_request
+What are the symptoms of anxiety?,definition_request
+What is attachment theory?,definition_request
+What does codependency mean?,definition_request
+Can you tell me about eating disorders?,definition_request
+What is imposter syndrome?,definition_request
+What does gaslighting mean?,definition_request
+Can you explain what dissociation feels like?,definition_request
+What is the fight or flight response?,definition_request
+What does emotional numbness mean?,definition_request
+Can you define what empathy is?,definition_request
+What is a mood disorder?,definition_request
+What does it mean to have racing thoughts?,definition_request
+Can you explain what validation means?,definition_request
+What is emotional dysregulation?,definition_request
+What does it mean to catastrophize?,definition_request
+Can you tell me about panic disorder?,definition_request
+What does rumination mean?,definition_request
+Can you explain what anxiety attacks are?,definition_request
+What is the difference between sadness and depression?,definition_request
+Can you define what self-esteem is?,definition_request
+What does hypervigilance mean?,definition_request
+Can you explain what emotional flooding is?,definition_request
+What is a support system?,definition_request
+What does it mean to self-soothe?,definition_request
+Can you tell me about medication for mental health?,definition_request
+What is the difference between therapy and counseling?,definition_request
+What does emotional wellness mean?,definition_request
+Can you explain what mindful breathing is?,definition_request
+What is exposure therapy?,definition_request
+Can you define what mental fatigue is?,definition_request
+What is cognitive distortion?,definition_request
+What does it mean to practice gratitude?,definition_request
+Can you explain what emotional baggage is?,definition_request
+What is the nervous system's role in anxiety?,definition_request
+What does it mean to be in crisis?,definition_request
+Can you tell me about different types of therapy?,definition_request
+What is emotional awareness?,definition_request
+What does it mean to have healthy relationships?,definition_request
+Can you explain what self-compassion is?,definition_request
+What is the mind-body connection?,definition_request
+What does it mean to be present?,definition_request
+Can you define what emotional boundaries are?,definition_request
+What is the window of tolerance?,definition_request
+What does it mean to regulate emotions?,definition_request
+Can you explain what psychological safety is?,definition_request
+What is the difference between worry and anxiety?,definition_request
+What does it mean to practice acceptance?,definition_request
+Can you tell me about mental health stigma?,definition_request
+What is emotional literacy?,definition_request
+Try taking deep breaths when you feel anxious,coping_advice
+Remember that this feeling will pass,coping_advice
+Ground yourself by naming five things you can see,coping_advice
+It's okay to take breaks when you need them,coping_advice
+Consider writing in a journal tonight,coping_advice
+You're stronger than you realize,coping_advice
+Focus on what you can control right now,coping_advice
+Be gentle with yourself during tough times,coping_advice
+Try the 4-7-8 breathing technique,coping_advice
+It helps to talk to someone you trust,coping_advice
+Take it one day at a time,coping_advice
+Your feelings are valid and important,coping_advice
+Try going for a short walk outside,coping_advice
+Remember to drink water and eat something,coping_advice
+Listen to calming music or sounds,coping_advice
+You don't have to face this alone,coping_advice
+Practice saying no to protect your energy,coping_advice
+Try the 5-4-3-2-1 grounding exercise,coping_advice
+It's okay to ask for help,coping_advice
+Focus on your breathing right now,coping_advice
+You've gotten through difficult times before,coping_advice
+Try to be present in this moment,coping_advice
+Consider calling a friend or family member,coping_advice
+Take a warm bath or shower,coping_advice
+"You deserve compassion, especially from yourself",coping_advice
+Try progressive muscle relaxation,coping_advice
+Remember that setbacks are part of recovery,coping_advice
+"Focus on small, achievable goals today",coping_advice
+You are not your thoughts,coping_advice
+Try to maintain a regular sleep schedule,coping_advice
+It's okay to feel what you're feeling,coping_advice
+Consider doing something creative,coping_advice
+You matter and your life has value,coping_advice
+Try gentle stretching or yoga,coping_advice
+Reach out to a mental health professional,coping_advice
+Remember that healing takes time,coping_advice
+Focus on gratitude for small things,coping_advice
+"You are not broken, you are human",coping_advice
+Try mindful meditation for a few minutes,coping_advice
+It's okay to have bad days,coping_advice
+Consider limiting social media today,coping_advice
+You have survived every bad day so far,coping_advice
+Try to eat something nourishing,coping_advice
+Remember that you are enough,coping_advice
+Practice self-compassion instead of self-criticism,coping_advice
+Try spending time in nature,coping_advice
+You don't have to be perfect,coping_advice
+Consider talking to a counselor,coping_advice
+Focus on your breathing and slow it down,coping_advice
+You are worthy of love and care,coping_advice
+Try doing something that brings you joy,coping_advice
+Remember that you have options,coping_advice
+Take things at your own pace,coping_advice
+You are not alone in feeling this way,coping_advice
+Try to get some sunlight today,coping_advice
+It's okay to cancel plans to take care of yourself,coping_advice
+Consider keeping a mood journal,coping_advice
+You have strength you haven't discovered yet,coping_advice
+Try listening to a guided meditation,coping_advice
+Remember that tomorrow is a new day,coping_advice
+Focus on what you're grateful for right now,coping_advice
+You deserve to feel better,coping_advice
+Try doing something kind for yourself,coping_advice
+It's okay to cry if you need to,coping_advice
+Consider reaching out to someone who cares,coping_advice
+You are capable of getting through this,coping_advice
+Try to do one small thing for yourself today,coping_advice
+Remember that your feelings are temporary,coping_advice
+You don't have to have all the answers,coping_advice
+Try engaging your senses mindfully,coping_advice
+It's okay to take medication if it helps,coping_advice
+You are more resilient than you know,coping_advice
+Try to connect with your support system,coping_advice
+Remember that recovery is not linear,coping_advice
+Focus on breathing in calm and breathing out tension,coping_advice
+You have the right to prioritize your mental health,coping_advice
+Try to practice patience with yourself,coping_advice
+It's okay to start over as many times as you need,coping_advice
+Consider what would be most helpful right now,coping_advice
+You are deserving of peace and happiness,coping_advice
+Try to notice and challenge negative thoughts,coping_advice
+Remember that seeking help is a sign of strength,coping_advice
+You don't have to carry this burden alone,coping_advice
+Try to create a safe and calming environment,coping_advice
+Focus on the present moment instead of tomorrow's worries,coping_advice
+You have gotten through 100% of your worst days,coping_advice
+Try to treat yourself with the kindness you'd show a friend,coping_advice
+I don't want to be here anymore,self_harm
+I feel like giving up,self_harm
+Everything feels hopeless,self_harm
+I'm tired of fighting,self_harm
+I don't think anyone would miss me,self_harm
+I can't see a way out,self_harm
+I feel completely empty inside,self_harm
+I don't want to wake up tomorrow,self_harm
+I feel like a burden to everyone,self_harm
+I can't handle this pain anymore,self_harm
+I feel worthless,self_harm
+I don't see the point in continuing,self_harm
+I feel like I'm drowning,self_harm
+I can't stop thinking about ending it,self_harm
+Everyone would be better off without me,self_harm
+I feel so alone,self_harm
+I'm falling apart,self_harm
+I don't have the strength to go on,self_harm
+I feel like nothing matters,self_harm
+I'm so tired of hurting,self_harm
+I feel trapped,self_harm
+I don't want to feel this way anymore,self_harm
+I'm breaking down,self_harm
+I feel like I'm losing myself,self_harm
+I can't see any hope,self_harm
+I feel like I'm suffocating,self_harm
+I don't think I can make it,self_harm
+I feel completely lost,self_harm
+I'm scared of my own thoughts,self_harm
+I feel like I'm in a dark hole,self_harm
+I can't find any reason to keep going,self_harm
+I feel like I'm disappearing,self_harm
+I'm exhausted from pretending I'm okay,self_harm
+I don't think the pain will ever stop,self_harm
+I feel like I'm broken beyond repair,self_harm
+I can't imagine tomorrow getting better,self_harm
+I feel like I'm failing at everything,self_harm
+I don't think I deserve to be happy,self_harm
+I feel like I'm in constant agony,self_harm
+I'm losing hope,self_harm
+I feel like I'm barely hanging on,self_harm
+I don't think anyone understands my pain,self_harm
+I feel like I'm stuck in darkness,self_harm
+I can't find any light,self_harm
+I feel like I'm not meant to be here,self_harm
+I'm tired of being a disappointment,self_harm
+I feel like I'm running out of time,self_harm
+I don't think things will ever get better,self_harm
+I feel like I'm carrying too much weight,self_harm
+I'm scared I might hurt myself,self_harm
+I feel like I'm screaming inside,self_harm
+I don't know how much more I can take,self_harm
+I feel like I'm invisible,self_harm
+I'm afraid of my own mind,self_harm
+I feel like I'm dying inside,self_harm
+I don't think I'm strong enough,self_harm
+I feel like I'm letting everyone down,self_harm
+I'm overwhelmed by the darkness,self_harm
+I feel like I'm beyond help,self_harm
+I don't think I can face another day,self_harm
+I feel like I'm completely alone,self_harm
+I'm losing myself more each day,self_harm
+I feel like I'm in endless pain,self_harm
+I don't see any way forward,self_harm
+I feel like I'm slowly fading away,self_harm
+I'm terrified of my thoughts,self_harm
+I feel like I'm trapped in my head,self_harm
+I don't think anyone really cares,self_harm
+I feel like I'm drowning in despair,self_harm
+I'm tired of fighting this battle,self_harm
+I feel like I'm not good enough for anything,self_harm
+I don't think I can survive this,self_harm
+I feel like I'm completely broken,self_harm
+I'm losing the will to live,self_harm
+I feel like I'm in a nightmare I can't escape,self_harm
+I don't think the world needs me,self_harm
+I feel like I'm being consumed by darkness,self_harm
+I'm afraid I won't make it through,self_harm
+I feel like I'm already gone,self_harm
+I don't see any purpose in my life,self_harm
+I feel like I'm at the end of my rope,self_harm
+I'm wondering if anyone would notice if I was gone,self_harm
+I feel like I'm slowly disappearing,self_harm
+I don't think I belong anywhere,self_harm
+I feel like I'm too damaged to be fixed,self_harm
+It's really nice weather today,small_talk
+How was your weekend?,small_talk
+I love this song,small_talk
+I had pizza for dinner,small_talk
+My dog is so cute,small_talk
+Traffic was terrible this morning,small_talk
+I need to do laundry,small_talk
+Do you like coffee or tea?,small_talk
+I can't find my keys,small_talk
+The sunset looks beautiful tonight,small_talk
+My phone battery is dying,small_talk
+I need to grocery shop later,small_talk
+My neighbor's cat is adorable,small_talk
+I'm trying a new recipe tonight,small_talk
+The gym was crowded today,small_talk
+I finished reading a great book,small_talk
+My car needs an oil change,small_talk
+What time do you usually wake up?,small_talk
+I'm planning a vacation,small_talk
+My favorite season is autumn,small_talk
+I need to water my plants,small_talk
+The new restaurant downtown is good,small_talk
+I'm learning to play guitar,small_talk
+My commute was shorter today,small_talk
+I love watching documentaries,small_talk
+The weather forecast looks good,small_talk
+I'm thinking about adopting a pet,small_talk
+My favorite hobby is gardening,small_talk
+I need to organize my closet,small_talk
+The coffee shop has new pastries,small_talk
+I'm excited for the weekend,small_talk
+My sister called me yesterday,small_talk
+I love trying new restaurants,small_talk
+The concert was amazing,small_talk
+I need to charge my laptop,small_talk
+My favorite TV show is ending,small_talk
+I'm thinking about painting my room,small_talk
+The library has new books,small_talk
+I love walking in the park,small_talk
+My morning routine includes yoga,small_talk
+I need to buy new shoes,small_talk
+The farmer's market has fresh fruit,small_talk
+I'm learning a new language,small_talk
+My favorite ice cream flavor is vanilla,small_talk
+I need to clean my house,small_talk
+The movie theater has comfy seats,small_talk
+I love listening to podcasts,small_talk
+My garden is growing well,small_talk
+I need to schedule a dentist appointment,small_talk
+The museum has a new exhibit,small_talk
+I love cooking on weekends,small_talk
+My alarm didn't go off today,small_talk
+I'm thinking about joining a book club,small_talk
+The store has a sale,small_talk
+I love the sound of rain,small_talk
+My friend is visiting next week,small_talk
+I need to renew my library card,small_talk
+The beach was perfect today,small_talk
+I love trying new coffee flavors,small_talk
+My computer is running slowly,small_talk
+I'm thinking about taking a class,small_talk
+The birds outside are chirping,small_talk
+I love watching the sunrise,small_talk
+My favorite snack is pretzels,small_talk
+I need to update my resume,small_talk
+The park has beautiful flowers,small_talk
+I love rainy afternoons,small_talk
+My cat loves to sleep in the sun,small_talk
+I need to buy groceries tomorrow,small_talk
+The bakery has fresh donuts,small_talk
+I love reading before bed,small_talk
+My bike needs new tires,small_talk
+I'm thinking about redecorating,small_talk
+The stars are bright tonight,small_talk
+I love making smoothies,small_talk
+My schedule is packed this week,small_talk
+I need to call my mom,small_talk
+The local festival was fun,small_talk
+I love autumn leaves,small_talk
+My favorite pizza topping is mushrooms,small_talk
+I need to fix my leaky faucet,small_talk
+How do you make chocolate cake?,other
+I need directions to the airport,other
+Can you translate this Spanish phrase?,other
+What's the weather like tomorrow?,other
+What's the best way to learn piano?,other
+Can you recommend a good restaurant?,other
+How do I file my taxes?,other
+What's the difference between cats and dogs?,other
+Can you explain how photosynthesis works?,other
+What's the best investment strategy?,other
+How do I fix my computer?,other
+What's the history of the pyramids?,other
+Can you help me plan a party?,other
+What's the best way to lose weight?,other
+How do I apply for a passport?,other
+What's the fastest way to learn French?,other
+What's the best career advice?,other
+What's the best way to study?,other
+How do I paint a room?,other
+What's the best travel destination?,other
+Can you help me budget my money?,other
+What's the best way to cook chicken?,other
+What's the best college major?,other
+Can you explain the stock market?,other
+What's the best way to network?,other
+How do I write a novel?,other
+What's the best productivity app?,other
+Can you help me choose a car?,other
+How do I improve my memory?,other
+What's the best dating advice?,other
+Can you explain artificial intelligence?,other
+What's the best way to negotiate?,other
+How do I start exercising?,other
+What's the best skincare routine?,other
+Can you help me plan a wedding?,other
+What's the best retirement plan?,other
+Can you explain climate change?,other
+What's the best way to meal prep?,other
+How do I find a good lawyer?,other
+What's the best streaming service?,other
+Can you help me choose a laptop?,other
+What's the best way to learn photography?,other
+How do I start a podcast?,other
+What's the best home security system?,other
+Can you explain the electoral process?,other
+How do I choose a good mattress?,other
+Can you help me with public speaking?,other
+What's the best way to clean my house?,other
+How do I choose health insurance?,other
+What's the best way to train a dog?,other
+Can you explain blockchain technology?,other
+What's the best way to manage time?,other
+What's the best way to learn cooking?,other
+Can you help me choose a college?,other
+What's the best way to reduce stress?,other
+How do I improve my writing skills?,other
+What's the best way to find a job?,other
+Can you explain renewable energy?,other
+What's the best way to learn meditation?,other
+How do I choose a financial advisor?,other
+What's the best way to plan for retirement?,other
+What's the best way to learn new skills?,other
+How do I choose the right career?,other
+What's the best way to stay motivated?,other
+Can you explain machine learning?,other
+What's the best way to build confidence?,other
+How do I improve my communication skills?,other
+What's the best way to handle conflict?,other
+Can you help me with goal setting?,other
