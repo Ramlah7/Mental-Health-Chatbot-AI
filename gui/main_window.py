@@ -3,7 +3,8 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import QMessageBox
 from gui.main_window_ui import Ui_MainWindow
 
-from chatbot.rule_based_chatbot import generate_bot_reply
+#from chatbot.rule_based_chatbot import generate_bot_reply
+from chatbot_engine import MindMateBot
 from database.database_handler import (
     init_schema,
     create_session,
@@ -44,6 +45,8 @@ class ChatWindow(QtWidgets.QMainWindow):
         except Exception as e:
             self.show_error("ScrollArea Error", str(e))
 
+        self.bot = MindMateBot()
+
         self.ui.pushButton.clicked.connect(self.send_message)
         self.ui.lineEdit.returnPressed.connect(self.send_message)
         self.ui.historyList.itemClicked.connect(self.on_history_clicked)
@@ -81,7 +84,9 @@ class ChatWindow(QtWidgets.QMainWindow):
             self.show_error("Logging User Message Failed", str(e))
 
         try:
-            reply = generate_bot_reply(text)
+            reply = self.bot.get_reply(text)
+            #reply = generate_bot_reply(text)
+
         except Exception as e:
             reply = f"[Bot error: {e}]"
 
