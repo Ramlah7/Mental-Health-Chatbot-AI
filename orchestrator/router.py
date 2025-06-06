@@ -2,14 +2,14 @@
 
 from preprocessing.text_normalizer import normalize
 from retrieval.index import faq_query
-from chatbot.rule_based_chatbot import generate_bot_reply as generate_reply
+from chatbot.rule_based_chatbot2 import generate_bot_reply as generate_reply
 import traceback
 import re
 
 # Similarity threshold for FAQ matching
 SIM_THRESHOLD = 0.78
 # Number of sentences to keep from a generated reply
-MAX_SENTENCES = 5
+MAX_SENTENCES = 3
 
 # Simple pattern-response map
 PATTERN_RESPONSES = [
