@@ -1,0 +1,1 @@
+download trained mindmate_dialo model from: 
