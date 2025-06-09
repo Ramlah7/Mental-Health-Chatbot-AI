@@ -1,70 +1,102 @@
-# scripts/finetune_dialo.py
-from __future__ import annotations
-import pathlib, sys, time, traceback
-from packaging import version
-from datasets import load_dataset
+# ✅ DialoGPT Training on EmpatheticDialogues with Google Drive + Checkpointing (Auto-Resume)
+
+# Step 1: Mount Google Drive
+from google.colab import drive
+import pathlib, json, time, sys, traceback
+from datasets import Dataset
 from transformers import (
     AutoTokenizer, AutoModelForCausalLM,
     TrainingArguments, DataCollatorForLanguageModeling, Trainer
 )
-import transformers as _tf
 
-# Paths
-d = pathlib.Path(__file__).resolve().parents[1]
-DATA = d / "data" / "processed"
-OUT  = d / "models" / "mindmate_dialo"
-TRAIN_FILE = DATA / "train.jsonl"
-VALID_FILE = DATA / "valid.jsonl"
+drive.mount('/content/drive')
+
+# Step 2: Define paths
 BASE_MODEL = "microsoft/DialoGPT-small"
+ROOT = pathlib.Path("/content")
+DATA_DIR = ROOT / "content"
+TRAIN_FILE = DATA_DIR / "train.jsonl"
+VALID_FILE = DATA_DIR / "valid.jsonl"
+OUT = pathlib.Path("/content/drive/MyDrive/mindmate_dialo_model")
 
-def log(msg: str): print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
+# Step 3: Logging function
+def log(msg: str):
+    print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
+# Step 4: Read JSONL function
+def read_jsonl(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return [json.loads(line) for line in f]
 
-def main() -> None:
+# Step 5: Auto-detect latest checkpoint
+def get_latest_checkpoint(checkpoint_dir: pathlib.Path):
+    checkpoints = sorted(checkpoint_dir.glob("checkpoint-*"), key=lambda x: int(x.name.split('-')[-1]))
+    return str(checkpoints[-1]) if checkpoints else None
+
+# Step 6: Main Training Logic
+def main():
     if not TRAIN_FILE.exists() or not VALID_FILE.exists():
-        sys.exit("Missing JSONL files.")
+        sys.exit("❌ train.jsonl or valid.jsonl not found in /content/content")
+
     OUT.mkdir(parents=True, exist_ok=True)
 
-    log("Loading model …")
+    log("🔁 Loading tokenizer and model …")
     tok = AutoTokenizer.from_pretrained(BASE_MODEL)
     tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(BASE_MODEL)
 
-    log("Loading & tokenising dataset …")
-    ds = load_dataset("json", data_files={"train":str(TRAIN_FILE),"validation":str(VALID_FILE)})
-    ds = ds.map(lambda b: tok(b["text"],truncation=True,padding="max_length",max_length=256), batched=True)
-    for sp in ["train","validation"]: ds[sp] = ds[sp].add_column("labels", ds[sp]["input_ids"])
+    log("📄 Reading and tokenizing dataset manually …")
+    train_data_raw = read_jsonl(TRAIN_FILE)
+    valid_data_raw = read_jsonl(VALID_FILE)
 
-    common = dict(output_dir=str(OUT), overwrite_output_dir=True,
-                  num_train_epochs=8, per_device_train_batch_size=1,
-                  gradient_accumulation_steps=4, learning_rate=2e-4,
-                  save_total_limit=2, fp16=False, report_to="none",
-                  logging_steps=50, logging_first_step=True)
-    try:
-        args = TrainingArguments(**common, evaluation_strategy="epoch", save_strategy="epoch")
-    except TypeError:
-        log("Fallback to step-based eval/save")
-        args = TrainingArguments(**common, eval_steps=500, save_steps=500)
+    train_enc = tok([x["text"] for x in train_data_raw], truncation=True, padding="max_length", max_length=256)
+    valid_enc = tok([x["text"] for x in valid_data_raw], truncation=True, padding="max_length", max_length=256)
 
-    trainer = Trainer(model=model, args=args,
-                      train_dataset=ds["train"], eval_dataset=ds["validation"],
-                      tokenizer=tok, data_collator=DataCollatorForLanguageModeling(tok,mlm=False))
+    train_enc["labels"] = train_enc["input_ids"]
+    valid_enc["labels"] = valid_enc["input_ids"]
 
-    ckpts = sorted(OUT.glob("checkpoint-*"))
-    resume = ckpts[-1] if ckpts else None
-    if resume: log(f"Resuming {resume.name}")
+    train_dataset = Dataset.from_dict(train_enc)
+    valid_dataset = Dataset.from_dict(valid_enc)
 
-    log("Starting training (Ctrl-C to pause)…")
-    trainer.train(resume_from_checkpoint=resume)
-    log("Training complete.")
+    log("🛠️ Setting up training arguments …")
+    args = TrainingArguments(
+        output_dir=str(OUT),
+        overwrite_output_dir=True,
+        num_train_epochs=3,
+        per_device_train_batch_size=1,
+        gradient_accumulation_steps=4,
+        learning_rate=2e-4,
+        save_total_limit=2,
+        save_steps=500,
+        logging_dir=str(OUT / "logs"),
+        logging_steps=50,
+        logging_first_step=True,
+        fp16=False,
+        report_to="none"
+    )
 
-    log("Saving model …")
+    trainer = Trainer(
+        model=model,
+        args=args,
+        train_dataset=train_dataset,
+        eval_dataset=valid_dataset,
+        tokenizer=tok,
+        data_collator=DataCollatorForLanguageModeling(tok, mlm=False)
+    )
+
+    latest_ckpt = get_latest_checkpoint(OUT)
+    log(f"🚀 Starting training from checkpoint: {latest_ckpt if latest_ckpt else 'scratch'}")
+    trainer.train(resume_from_checkpoint=latest_ckpt)
+
+    log("✅ Training complete. Saving model …")
     model.save_pretrained(OUT)
     tok.save_pretrained(OUT)
-    log(f"Saved to {OUT.relative_to(d)}")
+    log(f"📦 Final model saved at: {OUT}")
 
-
-if __name__ == "__main__":
-    try: main()
-    except KeyboardInterrupt: log("Interrupted — resume later.")
-    except Exception as e: log(f"Error: {e}"); traceback.print_exc()
+try:
+    main()
+except KeyboardInterrupt:
+    log("⏸️ Training interrupted — resume later.")
+except Exception as e:
+    log(f"❌ Error: {e}")
+    traceback.print_exc()
