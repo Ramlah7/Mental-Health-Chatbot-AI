@@ -1,132 +1,203 @@
-# 🧠 MindMate: Mental Health Chatbot
+# MindMate: Empathetic Mental Health Chatbot
 
-**MindMate** is an intelligent, hybrid chatbot designed to offer compassionate, context-aware mental health support using a combination of semantic search (SBERT + FAISS), pattern-based intent detection, and optional generative models (BlenderBot). It is built in Python with a PyQt5 GUI and MySQL backend.
-
----
-
-## 💡 Features
-
-- ✅ Emotion-aware response engine (anxiety, depression, insomnia, panic, etc.)
-- ✅ Real-time semantic retrieval with FAISS and SBERT
-- ✅ Regex-based intent detection with 10+ categories
-- ✅ PyQt5-based interactive desktop GUI
-- ✅ Session history and message logging in MySQL
-- ✅ Easily extendable with your own datasets or generative models
+A PyQt5-based intelligent chatbot that combines emotion-aware dialogue management, FAISS-based semantic search using Sentence-BERT, intent classification, and a fine-tuned Blenderbot-small model to provide accessible mental health support.
 
 ---
 
-## 📂 Project Structure
+## 📌 Overview
+
+**MindMate** is a multi-strategy mental health chatbot designed to offer 24/7 empathetic conversation, detect emotional distress, and provide appropriate support including referral to professional help in crisis situations.
+
+This project was developed by **Ramlah Munir**, CS Student at COMSATS University, Islamabad.
+
+---
+
+## 🔧 Features
+
+* 💬 Hybrid Chatbot: Combines Rule-based + Retrieval + Generative approaches
+* 🎯 Intent Classification: Regex + rule-based logic (in `intent.py`)
+* 🔎 Semantic Retrieval: Sentence-BERT + FAISS (via `semantic.py`)
+* 🧠 Generative Model: Fine-tuned `facebook/blenderbot_small-90M` on mental health JSONL dataset
+* 📚 Session Logging: All conversations stored securely in MySQL
+* 🌐 GUI: PyQt5-based chat interface with rich formatting
+* 🛑 Crisis Detection: Auto-response if user shows distress or uses trigger phrases
+
+---
+
+## 🗂️ Directory Structure
 
 ```
-Mental-Health-Chatbot-AI/
-├── chatbot/
-│   ├── generator.py
-│   ├── intent.py
-│   ├── faq_query.py
-│   ├── chatbot_engine.py
-│   ├── model/
-│   │   ├── faiss_index/
-│   │   └── mindmate_dialo/
-│   ├── data/
-│   │   └── mental_health_tagged.csv
+MindMate/
+├── build mindmate_dialo.py       # Blenderbot-small fine-tuning script
+├── build fiass.py                # FAISS index builder from SBERT embeddings
+├── generator.py                  # Inference handler using HuggingFace
+├── intent.py                     # Intent classification logic
+├── semantic.py                   # Sentence-BERT + FAISS semantic search
+├── router.py                     # Hybrid strategy selector (rule / semantic / generative)
+├── train_formatted.jsonl         # Dataset for fine-tuning
+├── model/
+│   └── mindmate_finetuned/       # Trained Blenderbot-small model directory
+├── faiss_index/
+│   ├── index.bin                 # FAISS vector search index
+│   └── responses.csv             # Response mapping
+├── data/
+│   └── mental_health_tagged.csv # Raw input and response pairs
 ├── gui/
-├── database/
-│   └── database_handler.py
+│   └── mainwindow.py             # PyQt5 GUI logic
+├── requirements.txt              # All Python dependencies
+└── README.md
 ```
 
 ---
 
-## 🧠 How It Works
+## 🧠 Model Training (Blenderbot-small)
 
-1. **User Input** → Intent is detected using `intent.py`
-2. If FAISS match score is high → SBERT semantic reply is returned
-3. Otherwise → fallback response from `generator.py` is used
-4. All interactions are saved to MySQL (`sessions`, `messages` tables)
+Fine-tuned `facebook/blenderbot_small-90M` using custom JSONL with mental health dialogues.
+
+✅ Script: [`build mindmate_dialo.py`](./build%20mindmate_dialo.py)
+✅ Dataset: [`train_formatted.jsonl`](./train_formatted.jsonl)
+✅ Output Model: `model/mindmate_finetuned/`
+
+Each training sample includes `prompt`, `instruction`, and `response` fields. Training was performed using HuggingFace `Trainer` API on Colab with GPU/TPU.
+
+Sample JSON:
+
+```json
+{
+  "prompt": "I'm feeling really anxious before exams",
+  "instruction": "Provide supportive and calming response",
+  "response": "It's completely okay to feel this way before exams. Deep breathing and planning can help. Would you like me to guide you through some techniques?"
+}
+```
+
+Use `generator.py` to load and generate responses using the fine-tuned model.
+
+````
+
+Trained model is saved in: `model/mindmate_finetuned/`
 
 ---
 
-## 💾 Installation
+## 🧠 FAISS Semantic Search Index
+
+**Script:** `build fiass.py`
+This script builds a dense vector index using **Sentence-BERT** embeddings for user input queries and saves it using **FAISS** for fast similarity search.
+
+### 🔧 Workflow:
+1. Loads a dataset from: `data/mental_health_tagged.csv`
+2. Extracts `user_input` → encodes with SBERT: `all-mpnet-base-v2`
+3. Creates FAISS index (`IndexFlatL2`)
+4. Saves:
+   - FAISS vector index → `faiss_index/index.bin`
+   - Associated bot replies → `faiss_index/responses.csv`
+
+### 💃 Expected CSV Format:
+```csv
+user_input,bot_reply
+"I'm feeling lonely","I'm here for you. You're not alone..."
+"I can't sleep lately","Sleep issues are common. Want to try a calming routine?"
+````
+
+### 🏁 Output Files:
+
+* `faiss_index/index.bin` → FAISS vector search structure
+* `faiss_index/responses.csv` → Matched response lookup
+
+This FAISS index is later queried by `faq_query.py` during inference.
+
+---
+
+## 💻 Setup Instructions
 
 ```bash
-git clone https://github.com/yourusername/Mental-Health-Chatbot-AI.git
-cd Mental-Health-Chatbot-AI
+# Clone this repository
+$ git clone https://github.com/yourusername/mindmate-chatbot.git
+$ cd mindmate-chatbot
 
-# Install dependencies
-pip install -r requirements.txt
+# Install requirements
+$ pip install -r requirements.txt
+
+# Download Sentence-BERT
+$ pip install sentence-transformers
+
+# Run GUI
+$ python gui/mainwindow.py
 ```
 
 ---
 
-## 📦 Requirements
+## ✅ Requirements
 
 ```
+torch
+transformers
 sentence-transformers
 faiss-cpu
-transformers
-pandas
-numpy
-PyQt5
-pymysql
+pyqt5
+mysql-connector-python
 ```
 
 ---
 
-## 🗄️ MySQL Schema
+## 📊 MySQL Logging Schema
+
+### `sessions` Table
 
 ```sql
 CREATE TABLE sessions (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  title VARCHAR(255)
+  session_id VARCHAR(36) PRIMARY KEY,
+  user_id VARCHAR(50),
+  start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  message_count INT,
+  ...
 );
+```
 
+### `messages` Table
+
+```sql
 CREATE TABLE messages (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  session_id INT,
-  sender ENUM('user','bot'),
-  content TEXT,
-  timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE
+  message_id INT PRIMARY KEY AUTO_INCREMENT,
+  session_id VARCHAR(36),
+  sender ENUM('user', 'bot'),
+  message_text TEXT,
+  intent_classified VARCHAR(50),
+  response_method ENUM('rule_based', 'semantic_search', 'generated')
 );
 ```
 
 ---
 
-## 🚀 Running the App
+## 📷 Screenshots
 
-### 🧠 1. Build the FAISS index:
-```bash
-python chatbot/build_faiss.py
-```
-
-### 💬 2. Launch the GUI:
-```bash
-python gui/main_window.py
-```
+* Happy interaction session ✅
+* Crisis support session 🖘
+* FAISS fallback and model response 🧠
 
 ---
 
-## 🧪 Sample Queries
+## 🚀 Future Enhancements
 
-```
-User: I can't sleep because of racing thoughts
-Bot: Racing thoughts are common with insomnia. Try the 4-7-8 breathing...
-```
-
-```
-User: What is anxiety?
-Bot: Anxiety is your body's natural response to stress. It's often...
-```
-
+* Voice-to-text integration
+* Emotion detection using vision/audio
+* More language support (Urdu, Arabic)
+* Mobile app (Flutter frontend)
 
 ---
 
-## 📚 References
+## 📄 Credits
 
-- [SBERT](https://www.sbert.net/)
-- [FAISS](https://github.com/facebookresearch/faiss)
-- [BlenderBot](https://huggingface.co/facebook/blenderbot_small-90M)
+Developed by:
+**Ramlah Munir**
+CS Department, COMSATS Islamabad
+
+Model Finetuning Help: HuggingFace Transformers + Colab TPU
+Data Cleaning: Self-curated empathetic dialogues (based on DailyDialog + MentalHealthReddit)
 
 ---
 
-> 💚 You are not alone. This project was built to listen, support, and stand by anyone going through a hard time.
+## 📜 License
+
+Open-source for research and academic use. For commercial use, contact the author.
+
+---
