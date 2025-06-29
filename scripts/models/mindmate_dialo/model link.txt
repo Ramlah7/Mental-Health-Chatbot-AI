@@ -1,1 +1,0 @@
-download trained mindmate_dialo model from: https://drive.google.com/drive/folders/1xh7oJ2elsOqSaRh0HPN2T1TkEf-zHz7p?usp=drive_link
