@@ -1,0 +1,10 @@
+torch
+transformers
+sentence-transformers
+faiss-cpu
+pyqt5
+mysql-connector-python
+scikit-learn
+pandas
+numpy
+tqdm
