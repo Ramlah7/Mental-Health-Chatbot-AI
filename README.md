@@ -189,15 +189,8 @@ CREATE TABLE messages (
 
 Developed by:
 **Ramlah Munir**
-CS Department, COMSATS Islamabad
 
 Model Finetuning Help: HuggingFace Transformers + Colab TPU
 Data Cleaning: Self-curated empathetic dialogues (based on DailyDialog + MentalHealthReddit)
-
----
-
-## 📜 License
-
-Open-source for research and academic use. For commercial use, contact the author.
 
 ---
